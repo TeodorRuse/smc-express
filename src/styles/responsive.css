@@ -26,7 +26,7 @@
   .nav__burger { display: flex; }
   .hero__stats { grid-template-columns: repeat(2,1fr); }
   .hero__scroll { display: none; }
-  .hero__route-map { opacity: 0.15; left: 0; top: 10%; bottom: 10%; }
+  .hero__route-map { opacity: 0.15; left: 0; right: 0; top: 10%; bottom: 10%; }
   .hero__city-label { display: none; }
   .hero__pin-pulse { display: none; }
   .svc-grid, .fleet-grid { grid-template-columns: 1fr; }

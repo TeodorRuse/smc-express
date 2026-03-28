@@ -18,11 +18,21 @@
   display: flex; align-items: center; gap: 0.5rem;
 }
 .nav__logo {
-  display: flex; align-items: baseline; gap: 0.05rem;
+  display: flex; align-items: center; gap: 0.5rem;
   cursor: pointer; user-select: none; margin-right: auto;
 }
-.nav__logo-img { height: 36px; width: auto; object-fit: contain; }
-.nav__logo-text { font-family: var(--ff-disp); font-size: 1.6rem; letter-spacing: 0.1em; color: var(--text); }
+.nav__logo-img {
+  height: 40px; width: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid var(--amber);
+  padding: 2px;
+  background: white;
+}
+[data-theme="dark"] .nav__logo-img {
+  box-shadow: 0 0 12px rgba(232,149,42,0.2);
+}
+.nav__logo-text { font-family: var(--ff-disp); font-size: 1.5rem; letter-spacing: 0.08em; color: var(--text); }
 
 .nav__links {
   display: flex; align-items: center; gap: 0;

@@ -7,7 +7,7 @@ export function Footer({ t }: { t: Translations }) {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="nav__logo" style={{ marginBottom: '0.75rem' }}>
-            <img className="nav__logo-img" src="/images/logo.png" alt="SMC Express" />
+            <img className="nav__logo-img" src="/images/smc_logo.jpg" alt="SMC Express" />
             <span className="nav__logo-text">SMC Express</span>
           </div>
           <p>{t.footer.tagline}</p>

@@ -61,7 +61,7 @@ export function Navbar({ t, lang, setLang, dark, setDark, scrollTo }: NavbarProp
     <nav className={`nav ${hasUserScrolled ? 'nav--scrolled' : ''}`}>
       <div className="nav__inner">
         <div className="nav__logo" onClick={() => navigateToSection('hero')} role="button" tabIndex={0}>
-          <img className="nav__logo-img" src="/images/logo.png" alt="SMC Express" />
+          <img className="nav__logo-img" src="/images/smc_logo.jpg" alt="SMC Express" />
           <span className="nav__logo-text">SMC Express</span>
         </div>
 
