@@ -146,3 +146,33 @@ textarea { resize: vertical; }
 
 /* ─── SHARED TEXT ─────────────────────────────────────────────── */
 .body-text { font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin-bottom: 1rem; }
+
+/* ─── MAINTENANCE OVERLAY ────────────────────────────────────── */
+.maintenance-wrap {
+  position: relative;
+}
+.maintenance-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(11, 15, 26, 0.55);
+  backdrop-filter: blur(2px);
+}
+[data-theme="light"] .maintenance-overlay {
+  background: rgba(255, 255, 255, 0.6);
+}
+.maintenance-label {
+  font-family: var(--ff-disp);
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--amber);
+  opacity: 0.7;
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--amber);
+  border-radius: 4px;
+  transform: rotate(-5deg);
+}

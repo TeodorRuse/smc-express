@@ -13,6 +13,17 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import './App.css';
 
+function MaintenanceOverlay({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="maintenance-wrap">
+      {children}
+      <div className="maintenance-overlay">
+        <span className="maintenance-label">In mentenanta</span>
+      </div>
+    </div>
+  );
+}
+
 /**
  * Root application component.
  * Manages global state (language, theme) and composes all page sections.
@@ -40,12 +51,12 @@ export default function App() {
       <Services t={t} />
       <About t={t} />
       <StatsBand t={t} />
-      <Fleet t={t} />
-      <Coverage t={t} />
-      <Careers t={t} />
-      <Testimonials t={t} />
-      <Contact t={t} />
-      <Footer t={t} />
+      <MaintenanceOverlay><Fleet t={t} /></MaintenanceOverlay>
+      <MaintenanceOverlay><Coverage t={t} /></MaintenanceOverlay>
+      <MaintenanceOverlay><Careers t={t} /></MaintenanceOverlay>
+      <MaintenanceOverlay><Testimonials t={t} /></MaintenanceOverlay>
+      <MaintenanceOverlay><Contact t={t} /></MaintenanceOverlay>
+      <MaintenanceOverlay><Footer t={t} /></MaintenanceOverlay>
     </div>
   );
 }
