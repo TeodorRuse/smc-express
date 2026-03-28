@@ -8,13 +8,12 @@ interface HeroProps {
   scrollTo: (id: string) => void;
 }
 
-/* TODO: Replace with real SMC Express numbers when available (e.g. '5M+', '97.5%', '120+', '15') */
-const STAT_VALS = ['000', '00%', '000+', '00'];
+const STAT_VALS = ['200+', '98.5%', '10+', '25'];
 
 /** Full-viewport hero section with animated title, CTAs, and key stats. */
 export function Hero({ t, scrollTo }: HeroProps) {
   const [heroRef, heroInView] = useInView(0.05);
-  const STAT_LABELS = [t.stats.tonnes, t.stats.onTime, t.stats.vehicles, t.stats.countries];
+  const STAT_LABELS = [t.stats.clients, t.stats.onTime, t.stats.vehicles, t.stats.countries];
 
   return (
     <section className="hero" id="hero" ref={heroRef as React.RefObject<HTMLElement>}>

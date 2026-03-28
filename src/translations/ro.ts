@@ -15,7 +15,7 @@ export const ro: Translations = {
     ctaSecondary: 'Explorează Serviciile',
     scroll: 'Derulează',
   },
-  stats: { tonnes: 'Tone Transportate', onTime: 'Livrări la Timp', vehicles: 'Vehicule în Flotă', countries: 'Țări Acoperite' },
+  stats: { clients: 'Clienți Mulțumiți', onTime: 'Livrări la Timp', vehicles: 'Vehicule în Flotă', countries: 'Țări Acoperite' },
   services: {
     tag: 'Ce Facem',
     title: 'Servicii Logistice\nComplete',
@@ -31,10 +31,10 @@ export const ro: Translations = {
   },
   about: {
     tag: 'Cine Suntem',
-    title: 'Construiți pe Încredere.\nConduși de Precizie.',
-    body1: 'Fondată în __YEAR__, SMC Express a început ca __ORIGIN_STORY__. Ani de îmbunătățire operațională ne-au transformat într-un partener logistic de încredere pentru afaceri din toată Europa.',
-    body2: 'Filosofia noastră este simplă: fiecare expediere poartă promisiunea cuiva față de clientul său. Luăm această responsabilitate în serios — investind în tehnologie modernă, șoferi experți și infrastructură robustă de rute.',
-    pillars: ['Certificat ISO 9001:2015', 'Centru Operațional 24/7', 'Manageri de Cont Dedicați', 'Urmărire Marfă în Timp Real'],
+    title: 'Marfa Dumneavoastră.\nPromisiunea Noastră.',
+    body1: 'Fondată în __YEAR__, SMC Express a început ca __ORIGIN_STORY__. Ceea ce a început modest a crescut prin dedicare, muncă asiduă și o convingere simplă: marfa dumneavoastră merită aceeași grijă pe care am acorda-o propriei noastre mărfi.',
+    body2: 'Fiecare transport pe care îl gestionăm poartă promisiunea cuiva către clientul său. Înțelegem această responsabilitate. De aceea investim în oamenii noștri, întreținem flota la cele mai înalte standarde și suntem mereu disponibili. Cu SMC Express, nu sunteți doar un client — sunteți un partener.',
+    pillars: ['Siguranța Mărfii', 'Flotă Modernă', 'Acoperire Europeană', 'Experiență & Încredere'],
     badge: 'Ani de Excelență',
   },
   fleet: {

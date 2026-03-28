@@ -10,7 +10,7 @@ export const es: Translations = {
     subtitle: 'Soluciones de transporte mundial basadas en velocidad y seguridad — entregamos lo que importa, donde sea necesario.',
     ctaPrimary: 'Envía Con Nosotros', ctaSecondary: 'Explorar Servicios', scroll: 'Desplazar',
   },
-  stats: { tonnes: 'Toneladas Transportadas', onTime: 'Tasa de Puntualidad', vehicles: 'Vehículos', countries: 'Países Cubiertos' },
+  stats: { clients: 'Clientes Satisfechos', onTime: 'Tasa de Puntualidad', vehicles: 'Vehículos', countries: 'Países Cubiertos' },
   services: {
     tag: 'Lo Que Hacemos', title: 'Servicios Logísticos\nCompletos',
     desc: 'Desde un solo palet hasta una cadena de suministro completa — SMC Express entrega precisión en cada etapa.',
@@ -24,10 +24,10 @@ export const es: Translations = {
     ],
   },
   about: {
-    tag: 'Quiénes Somos', title: 'Construidos sobre Confianza.\nImpulsados por Precisión.',
-    body1: 'Fundada en __YEAR__, SMC Express comenzó como __ORIGIN_STORY__. Años de mejora operativa nos han convertido en un socio logístico de confianza.',
-    body2: 'Nuestra filosofía es simple: cada envío lleva la promesa de alguien a su cliente. Tomamos esa responsabilidad en serio.',
-    pillars: ['Certificado ISO 9001:2015', 'Centro Operativo 24/7', 'Gestores de Cuenta Dedicados', 'Seguimiento de Carga en Tiempo Real'],
+    tag: 'Quiénes Somos', title: 'Tu Carga.\nNuestra Promesa.',
+    body1: 'Fundada en __YEAR__, SMC Express comenzó como __ORIGIN_STORY__. Lo que empezó siendo pequeño ha crecido gracias a la dedicación, el trabajo duro y una convicción simple: tu carga merece el mismo cuidado que daríamos a la nuestra.',
+    body2: 'Cada envío que gestionamos lleva la promesa de alguien a su cliente. Entendemos esa responsabilidad. Por eso invertimos en nuestra gente, mantenemos nuestra flota con los más altos estándares y estamos disponibles siempre que nos necesites. Con SMC Express, no eres solo un cliente — eres un socio.',
+    pillars: ['Seguridad de la Carga', 'Flota Moderna', 'Cobertura Europea', 'Experiencia & Confianza'],
     badge: 'Años de Excelencia',
   },
   fleet: {

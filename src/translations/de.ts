@@ -10,7 +10,7 @@ export const de: Translations = {
     subtitle: 'Weltweite Frachtlösungen, aufgebaut auf Schnelligkeit und Sicherheit — wir liefern, was zählt, wohin es auch gehen muss.',
     ctaPrimary: 'Mit Uns Versenden', ctaSecondary: 'Leistungen Entdecken', scroll: 'Scrollen',
   },
-  stats: { tonnes: 'Tonnen transportiert', onTime: 'Pünktlichkeitsrate', vehicles: 'Fahrzeuge', countries: 'Länder abgedeckt' },
+  stats: { clients: 'Zufriedene Kunden', onTime: 'Pünktlichkeitsrate', vehicles: 'Fahrzeuge', countries: 'Länder abgedeckt' },
   services: {
     tag: 'Was wir tun', title: 'Logistikleistungen\naus einer Hand',
     desc: 'Von einer einzelnen Palette bis zur vollständigen Lieferkette — SMC Express liefert Präzision auf jeder Etappe.',
@@ -24,10 +24,10 @@ export const de: Translations = {
     ],
   },
   about: {
-    tag: 'Wer wir sind', title: 'Aufgebaut auf Vertrauen.\nGetrieben von Präzision.',
-    body1: 'Gegründet __YEAR__, begann SMC Express als __ORIGIN_STORY__. Jahre kontinuierlicher Verbesserung haben uns zu einem vertrauenswürdigen Logistikpartner gemacht.',
-    body2: 'Unsere Philosophie ist einfach: Jede Sendung trägt das Versprechen jemandes an seinen Kunden. Wir nehmen diese Verantwortung ernst.',
-    pillars: ['ISO 9001:2015 Zertifiziert', '24/7 Betriebszentrale', 'Dedizierte Account Manager', 'Echtzeit-Frachttracking'],
+    tag: 'Wer wir sind', title: 'Ihre Fracht.\nUnser Versprechen.',
+    body1: 'Im Jahr __YEAR__ gegründet, begann SMC Express als __ORIGIN_STORY__. Was klein begann, ist durch Engagement, harte Arbeit und eine einfache Überzeugung gewachsen: Ihre Fracht verdient die gleiche Sorgfalt, die wir unserer eigenen widmen würden.',
+    body2: 'Jede Sendung, die wir transportieren, trägt das Versprechen jemandes an seinen Kunden. Wir verstehen diese Verantwortung. Deshalb investieren wir in unsere Mitarbeiter, pflegen unsere Flotte nach höchsten Standards und sind jederzeit für Sie da. Bei SMC Express sind Sie nicht nur Kunde — Sie sind Partner.',
+    pillars: ['Ladungssicherheit', 'Moderne Flotte', 'Europaweite Abdeckung', 'Erfahrung & Vertrauen'],
     badge: 'Jahre Exzellenz',
   },
   fleet: {

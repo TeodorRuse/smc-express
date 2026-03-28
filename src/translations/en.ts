@@ -15,7 +15,7 @@ export const en: Translations = {
     ctaSecondary: 'Explore Services',
     scroll: 'Scroll',
   },
-  stats: { tonnes: 'Tonnes Shipped', onTime: 'On-Time Rate', vehicles: 'Fleet Vehicles', countries: 'Countries Covered' },
+  stats: { clients: 'Happy Clients', onTime: 'On-Time Rate', vehicles: 'Fleet Vehicles', countries: 'Countries Covered' },
   services: {
     tag: 'What We Do',
     title: 'Full-Spectrum\nLogistics Services',
@@ -31,10 +31,10 @@ export const en: Translations = {
   },
   about: {
     tag: 'Who We Are',
-    title: 'Built on Trust.\nDriven by Precision.',
-    body1: 'Founded in __YEAR__, SMC Express began as __ORIGIN_STORY__. Years of relentless operational improvement have grown us into a trusted logistics partner for businesses across Europe.',
-    body2: 'Our philosophy is simple: every shipment carries someone\'s promise to their customer. We take that responsibility seriously — investing in modern fleet technology, expert drivers, and robust route infrastructure so your cargo arrives exactly when and where it\'s needed.',
-    pillars: ['ISO 9001:2015 Certified', '24/7 Operations Centre', 'Dedicated Account Managers', 'Real-Time Cargo Tracking'],
+    title: 'Your Cargo.\nOur Promise.',
+    body1: 'Founded in __YEAR__, SMC Express began as __ORIGIN_STORY__. What started small has grown through dedication, hard work, and a simple belief: your cargo deserves the same care we\'d give our own.',
+    body2: 'Every shipment we handle carries someone\'s promise to their customer. We understand that responsibility. That\'s why we invest in our people, maintain our fleet to the highest standards, and stay available whenever you need us. With SMC Express, you\'re not just a client — you\'re a partner.',
+    pillars: ['Cargo Security', 'Modern Fleet', 'European Coverage', 'Experience & Trust'],
     badge: 'Years of Excellence',
   },
   fleet: {

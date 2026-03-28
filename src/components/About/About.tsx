@@ -10,11 +10,17 @@ export function About({ t }: { t: Translations }) {
       <div className="container about__inner">
         <div className={`about__visual ${aboutInView ? 'ai' : ''}`}>
           <div className="about__img">
-            {/* TODO: Add company photo at public/images/about.jpg */}
-            <img src="/images/about.jpg" alt={t.about.tag} className="about__img-photo" />
+            <video
+              className="about__img-video"
+              src="/videos/sprinter_good.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
           </div>
           <div className="about__badge">
-            <b className="about__badge-num">__YEARS__</b>
+            <b className="about__badge-num">12</b>
             <span className="about__badge-lbl">{t.about.badge}</span>
           </div>
         </div>

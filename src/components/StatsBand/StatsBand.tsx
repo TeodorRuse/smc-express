@@ -1,12 +1,11 @@
 import { CountUp } from '../Hero/CountUp';
 import type { Translations } from '../../translations';
 
-/* TODO: Replace with real SMC Express numbers when available (e.g. '5M+', '97.5%', '120+', '15') */
-const STAT_VALS = ['000', '00%', '000+', '00'];
+const STAT_VALS = ['200+', '98.5%', '10+', '25'];
 
 /** Full-width amber banner displaying animated key statistics. */
 export function StatsBand({ t }: { t: Translations }) {
-  const STAT_LABELS = [t.stats.tonnes, t.stats.onTime, t.stats.vehicles, t.stats.countries];
+  const STAT_LABELS = [t.stats.clients, t.stats.onTime, t.stats.vehicles, t.stats.countries];
 
   return (
     <div className="stats-band">

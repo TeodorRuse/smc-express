@@ -10,7 +10,7 @@ export const fr: Translations = {
     subtitle: 'Solutions de fret mondiales fondées sur la vitesse et la sécurité — nous livrons ce qui compte, où que ce soit.',
     ctaPrimary: 'Expédiez Avec Nous', ctaSecondary: 'Explorer les Services', scroll: 'Défiler',
   },
-  stats: { tonnes: 'Tonnes Transportées', onTime: 'Taux de Ponctualité', vehicles: 'Véhicules', countries: 'Pays Couverts' },
+  stats: { clients: 'Clients Satisfaits', onTime: 'Taux de Ponctualité', vehicles: 'Véhicules', countries: 'Pays Couverts' },
   services: {
     tag: 'Ce Que Nous Faisons', title: 'Services Logistiques\nComplets',
     desc: 'D\'une seule palette à une refonte complète de la chaîne d\'approvisionnement — SMC Express livre la précision à chaque étape.',
@@ -24,10 +24,10 @@ export const fr: Translations = {
     ],
   },
   about: {
-    tag: 'Qui Nous Sommes', title: 'Fondés sur la Confiance.\nPortés par la Précision.',
-    body1: 'Fondée en __YEAR__, SMC Express a commencé comme __ORIGIN_STORY__. Des années d\'amélioration opérationnelle nous ont transformés en un partenaire logistique de confiance.',
-    body2: 'Notre philosophie est simple : chaque expédition porte la promesse de quelqu\'un envers son client. Nous prenons cette responsabilité au sérieux.',
-    pillars: ['Certifié ISO 9001:2015', 'Centre Opérationnel 24h/7j', 'Responsables de Compte Dédiés', 'Suivi de Fret en Temps Réel'],
+    tag: 'Qui Nous Sommes', title: 'Votre Fret.\nNotre Promesse.',
+    body1: 'Fondée en __YEAR__, SMC Express a commencé comme __ORIGIN_STORY__. Ce qui a commencé modestement a grandi grâce au dévouement, au travail acharné et à une conviction simple : votre marchandise mérite le même soin que nous accorderions à la nôtre.',
+    body2: 'Chaque expédition que nous gérons porte la promesse de quelqu\'un envers son client. Nous comprenons cette responsabilité. C\'est pourquoi nous investissons dans nos équipes, entretenons notre flotte selon les plus hauts standards et restons disponibles dès que vous avez besoin de nous. Avec SMC Express, vous n\'êtes pas un simple client — vous êtes un partenaire.',
+    pillars: ['Sécurité du Fret', 'Flotte Moderne', 'Couverture Européenne', 'Expérience & Confiance'],
     badge: 'Années d\'Excellence',
   },
   fleet: {

@@ -42,7 +42,7 @@ export interface Translations {
     scroll: string;
   };
   stats: {
-    tonnes: string;
+    clients: string;
     onTime: string;
     vehicles: string;
     countries: string;

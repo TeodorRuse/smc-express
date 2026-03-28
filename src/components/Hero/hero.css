@@ -77,17 +77,17 @@
 }
 .hero__stat {
   background: var(--bg);
-  padding: clamp(1rem, 1.5vh, 1.4rem) clamp(1rem, 1.5vw, 1.6rem);
-  display: flex; flex-direction: column; gap: 0.2rem;
+  padding: clamp(1.4rem, 2.5vh, 2.2rem) clamp(1.2rem, 2vw, 2rem);
+  display: flex; flex-direction: column; gap: 0.35rem;
 }
 [data-theme="dark"] .hero__stat { background: rgba(11,15,26,0.7); }
 [data-theme="light"] .hero__stat { background: rgba(250,252,255,0.9); }
 .hero__stat-val {
-  font-family: var(--ff-disp); font-size: clamp(1.4rem, 2vw, 1.9rem);
+  font-family: var(--ff-disp); font-size: clamp(1.8rem, 2.8vw, 2.6rem);
   color: var(--amber); letter-spacing: 0.02em;
 }
 .hero__stat-lbl {
-  font-family: var(--ff-cond); font-size: clamp(0.6rem, 0.75vw, 0.72rem);
+  font-family: var(--ff-cond); font-size: clamp(0.68rem, 0.85vw, 0.82rem);
   letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
 }
 .hero__scroll {
@@ -109,10 +109,10 @@
   right: -8%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 [data-theme="light"] .hero__route-map {
-  opacity: 0.65;
+  opacity: 0.8;
 }
 
 /* SVG overlay for route lines — stretches to fill container */
@@ -124,41 +124,35 @@
   overflow: visible;
 }
 
-/* Route lines — hairline, elegant */
+/* Route lines — dashed, like road markings */
 .hero__route-line {
   stroke: var(--amber);
-  stroke-opacity: 0.12;
-  stroke-width: 0.08;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
-  animation: drawRoute 0.8s ease forwards;
+  stroke-opacity: 0.25;
+  stroke-width: 0.7px;
+  stroke-dasharray: 3px 2.5px;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  opacity: 0;
+  animation: routeFadeIn 0.25s ease forwards;
 }
 [data-theme="light"] .hero__route-line {
-  stroke-opacity: 0.2;
+  stroke-opacity: 0.35;
   stroke: #b07820;
 }
-@keyframes drawRoute {
-  to { stroke-dashoffset: 0; }
+@keyframes routeFadeIn {
+  to { opacity: 1; }
 }
 
-/* Light particles — bright dot + soft halo */
-.hero__particle-dot {
-  fill: #e0f0ff;
-  opacity: 0.95;
+/* Pulse lights — bright circle */
+.hero__pulse-head {
+  fill: #ffffff;
+  opacity: 1;
+  filter: drop-shadow(0 0 1px rgba(255,255,255,0.8));
 }
-[data-theme="light"] .hero__particle-dot {
-  fill: #1a5276;
-  opacity: 0.85;
-}
-
-.hero__particle-halo {
-  fill: #7ec8f0;
-  opacity: 0.25;
-  filter: blur(0.15px);
-}
-[data-theme="light"] .hero__particle-halo {
-  fill: #3498db;
-  opacity: 0.15;
+[data-theme="light"] .hero__pulse-head {
+  fill: #1a3a5c;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 1px rgba(26,58,92,0.5));
 }
 
 /* City pin — positioned with % via inline style */
@@ -169,7 +163,7 @@
   flex-direction: column;
   align-items: center;
   opacity: 0;
-  animation: pinFadeIn 0.3s ease forwards;
+  animation: pinFadeIn 0.15s ease forwards;
 }
 @keyframes pinFadeIn {
   to { opacity: 1; }
@@ -183,34 +177,40 @@
   min-height: 3px;
   border-radius: 50%;
   background: var(--amber);
-  opacity: 0.7;
+  opacity: 0.85;
+  box-shadow: 0 0 3px rgba(232,160,32,0.3);
 }
 [data-theme="light"] .hero__pin-dot {
   background: #c4882a;
-  opacity: 0.85;
+  opacity: 0.95;
+  box-shadow: 0 0 4px rgba(196,136,42,0.3);
 }
 .hero__pin--capital .hero__pin-dot {
   width: 0.5vw;
   height: 0.5vw;
   min-width: 5px;
   min-height: 5px;
-  opacity: 0.8;
+  opacity: 0.95;
+  box-shadow: 0 0 6px rgba(232,160,32,0.4);
 }
 [data-theme="light"] .hero__pin--capital .hero__pin-dot {
-  opacity: 0.95;
+  opacity: 1;
+  box-shadow: 0 0 6px rgba(196,136,42,0.35);
 }
 
 /* Alba Iulia — dark dot, stands out */
 .hero__pin--alba .hero__pin-dot {
-  width: 1vw;
-  height: 1vw;
-  min-width: 10px;
-  min-height: 10px;
+  width: 1.1vw;
+  height: 1.1vw;
+  min-width: 11px;
+  min-height: 11px;
   background: #0f1528;
   opacity: 1;
+  box-shadow: 0 0 10px rgba(232,160,32,0.4), 0 0 20px rgba(232,160,32,0.15);
 }
 [data-theme="light"] .hero__pin--alba .hero__pin-dot {
   background: #1a2744;
+  box-shadow: 0 0 10px rgba(26,39,68,0.3), 0 0 20px rgba(26,39,68,0.1);
 }
 
 /* Alba Iulia amber core inside dark dot */
@@ -219,12 +219,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 0.4vw;
-  height: 0.4vw;
-  min-width: 4px;
-  min-height: 4px;
+  width: 0.45vw;
+  height: 0.45vw;
+  min-width: 5px;
+  min-height: 5px;
   border-radius: 50%;
   background: var(--amber);
+  box-shadow: 0 0 4px var(--amber);
 }
 
 /* Pulse rings — only on Alba Iulia */
@@ -238,7 +239,7 @@
   min-width: 24px;
   min-height: 24px;
   border-radius: 50%;
-  border: 1px solid #0f1528;
+  border: 1.5px solid #0f1528;
   opacity: 0;
   animation: ringPulse 3.5s ease-in-out infinite;
 }
@@ -253,7 +254,7 @@
   animation-delay: 1s;
 }
 @keyframes ringPulse {
-  0%   { transform: translate(-50%, -50%) scale(0.5); opacity: 0.4; }
+  0%   { transform: translate(-50%, -50%) scale(0.5); opacity: 0.5; }
   50%  { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
   100% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
 }
@@ -270,23 +271,23 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
-  opacity: 0.35;
+  opacity: 0.45;
 }
 [data-theme="light"] .hero__pin-label {
-  color: #4a5e80;
-  opacity: 0.55;
+  color: #3a5070;
+  opacity: 0.65;
 }
 .hero__pin--capital .hero__pin-label {
   font-size: clamp(6px, 0.6vw, 9px);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 [data-theme="light"] .hero__pin--capital .hero__pin-label {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .hero__pin--alba .hero__pin-label {
   font-size: clamp(8px, 0.75vw, 11px);
   color: var(--text);
-  opacity: 0.9;
+  opacity: 1;
   font-weight: 700;
   letter-spacing: 0.12em;
 }
