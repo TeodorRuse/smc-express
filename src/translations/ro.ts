@@ -22,11 +22,11 @@ export const ro: Translations = {
     desc: 'De la un singur palet la un lanț de aprovizionare complet — SMC Express oferă precizie la fiecare etapă a călătoriei.',
     items: [
       { title: 'Transport Marfă', desc: 'Soluții de transport complet și parțial pentru mărfuri interne și transfrontaliere, cu urmărire în timp real și termene garantate.' },
-      { title: 'Livrare Expresă', desc: 'Expedieri urgente gestionate cu rutare prioritară, șoferi dedicați și opțiuni de livrare în aceeași zi sau a doua zi.' },
-      { title: 'Depozitare', desc: 'Facilități de depozitare securizate, controlate climatic, cu management integrat al stocurilor și expediere automatizată.' },
-      { title: 'Ultimul Kilometru', desc: 'Rețele de livrare urbane și suburbane optimizate pentru viteză și precizie, cu confirmare live a livrării.' },
-      { title: 'Lanț de Frig', desc: 'Transport cu monitorizare a temperaturii pentru produse perisabile, farmaceutice și bunuri sensibile, conform tuturor reglementărilor.' },
-      { title: 'Soluții Personalizate', desc: 'Arhitectură logistică bespoke construită în jurul modelului tău operațional — de la consultanță la management dedicat de flotă.' },
+      { title: 'Livrare Rapidă', desc: 'Expedieri urgente gestionate cu rutare prioritară, șoferi dedicați și opțiuni de livrare în aceeași zi sau a doua zi.' },
+      { title: 'Securitatea Mărfii', desc: 'Marfa dumneavoastră este securizată și protejată în vehiculele noastre pe întreaga durată a transportului. Sisteme profesionale de fixare și monitorizare continuă.' },
+      { title: 'Transport Internațional', desc: 'Transport transfrontalier european cu gestionare completă a formalităților vamale și documentație în țările UE.' },
+      { title: 'Consultanță Logistică', desc: 'Optimizarea rutelor, analiza costurilor și consultanță pentru lanțul de aprovizionare — vă ajutăm să planificați o logistică mai inteligentă și mai eficientă.' },
+      { title: 'Logistică Dedicată', desc: 'Flotă și șofer dedicați exclusiv afacerii dumneavoastră — rute personalizate, program flexibil și vehicule adaptate nevoilor.' },
     ],
   },
   about: {

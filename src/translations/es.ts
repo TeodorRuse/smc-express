@@ -15,12 +15,12 @@ export const es: Translations = {
     tag: 'Lo Que Hacemos', title: 'Servicios Logísticos\nCompletos',
     desc: 'Desde un solo palet hasta una cadena de suministro completa — SMC Express entrega precisión en cada etapa.',
     items: [
-      { title: 'Transporte de Carga', desc: 'Soluciones de carga completa y parcial para mercancías nacionales y transfronterizas con seguimiento en tiempo real.' },
-      { title: 'Entrega Express', desc: 'Envíos urgentes gestionados con enrutamiento prioritario y opciones de entrega en el mismo día o al día siguiente.' },
-      { title: 'Almacenamiento', desc: 'Instalaciones de almacenamiento seguras y climatizadas con gestión integrada de inventario.' },
-      { title: 'Última Milla', desc: 'Redes de entrega urbanas y suburbanas optimizadas para velocidad y precisión.' },
-      { title: 'Cadena de Frío', desc: 'Transporte con monitoreo de temperatura para productos perecederos y farmacéuticos.' },
-      { title: 'Soluciones Personalizadas', desc: 'Arquitectura logística a medida construida alrededor de su modelo operativo.' },
+      { title: 'Transporte de Carga', desc: 'Soluciones de carga completa y parcial para mercancías nacionales y transfronterizas con seguimiento en tiempo real y plazos garantizados.' },
+      { title: 'Entrega Rápida', desc: 'Envíos urgentes gestionados con enrutamiento prioritario, conductores dedicados y opciones de entrega en el mismo día o al día siguiente.' },
+      { title: 'Seguridad de la Carga', desc: 'Su carga está asegurada y protegida en nuestros vehículos durante todo el trayecto. Sistemas de fijación profesionales y monitoreo continuo.' },
+      { title: 'Transporte Internacional', desc: 'Transporte transfronterizo europeo con gestión completa de aduanas y documentación en países de la UE.' },
+      { title: 'Consultoría Logística', desc: 'Optimización de rutas, análisis de costos y consultoría de cadena de suministro — le ayudamos a planificar una logística más inteligente.' },
+      { title: 'Logística Dedicada', desc: 'Una flota y conductor dedicados exclusivamente a su empresa — rutas personalizadas, horarios flexibles y vehículos adaptados a sus necesidades.' },
     ],
   },
   about: {

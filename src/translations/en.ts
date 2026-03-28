@@ -22,11 +22,11 @@ export const en: Translations = {
     desc: 'From a single pallet to a full supply chain overhaul — SMC Express delivers precision at every stage of the journey.',
     items: [
       { title: 'Freight Transport', desc: 'Full and partial truckload solutions for domestic and cross-border cargo, with real-time tracking and guaranteed delivery windows.' },
-      { title: 'Express Delivery', desc: 'Time-critical shipments handled with priority routing, dedicated drivers, and same-day or next-day delivery options.' },
-      { title: 'Warehousing', desc: 'Secure, climate-controlled storage facilities with integrated inventory management and automated dispatch.' },
-      { title: 'Last-Mile Logistics', desc: 'Urban and suburban delivery networks optimized for speed and precision, with live proof-of-delivery confirmation.' },
-      { title: 'Cold Chain', desc: 'Temperature-monitored transport for perishables, pharmaceuticals, and sensitive goods, compliant with all regulations.' },
-      { title: 'Custom Solutions', desc: 'Bespoke logistics architecture built around your operational model — from supply chain consulting to dedicated fleet management.' },
+      { title: 'Fast Delivery', desc: 'Time-critical shipments handled with priority routing, dedicated drivers, and same-day or next-day delivery options.' },
+      { title: 'Cargo Security', desc: 'Your cargo is safely secured and protected inside our vehicles throughout the entire journey. Professional fastening systems and continuous monitoring.' },
+      { title: 'International Transport', desc: 'Cross-border European transport with full customs handling and documentation across EU countries.' },
+      { title: 'Logistics Consulting', desc: 'Route optimization, cost analysis, and supply chain consulting — we help you plan smarter, more efficient logistics.' },
+      { title: 'Dedicated Logistics', desc: 'A dedicated fleet and driver assigned exclusively to your business — custom routes, schedules, and vehicles tailored to your needs.' },
     ],
   },
   about: {

@@ -15,12 +15,12 @@ export const de: Translations = {
     tag: 'Was wir tun', title: 'Logistikleistungen\naus einer Hand',
     desc: 'Von einer einzelnen Palette bis zur vollständigen Lieferkette — SMC Express liefert Präzision auf jeder Etappe.',
     items: [
-      { title: 'Gütertransport', desc: 'Voll- und Teilladungslösungen für inländische und grenzüberschreitende Fracht mit Echtzeit-Tracking.' },
-      { title: 'Expresslieferung', desc: 'Zeitkritische Sendungen mit Prioritätsrouting und Same-Day oder Next-Day Lieferoptionen.' },
-      { title: 'Lagerung', desc: 'Sichere, klimatisierte Lagereinrichtungen mit integriertem Bestandsmanagement.' },
-      { title: 'Letzte Meile', desc: 'Städtische und vorstädtische Liefernetzwerke, optimiert für Geschwindigkeit und Präzision.' },
-      { title: 'Kühlkette', desc: 'Temperaturüberwachter Transport für verderbliche Waren, Pharmazeutika und sensible Güter.' },
-      { title: 'Individuelle Lösungen', desc: 'Maßgeschneiderte Logistikarchitektur rund um Ihr Betriebsmodell — von der Beratung bis zum dedizierten Flottenmanagement.' },
+      { title: 'Gütertransport', desc: 'Voll- und Teilladungslösungen für inländische und grenzüberschreitende Fracht mit Echtzeit-Tracking und garantierten Lieferfenstern.' },
+      { title: 'Schnelle Lieferung', desc: 'Zeitkritische Sendungen mit Prioritätsrouting, dedizierten Fahrern und Lieferoptionen am selben oder nächsten Tag.' },
+      { title: 'Ladungssicherheit', desc: 'Ihre Fracht ist in unseren Fahrzeugen während der gesamten Fahrt sicher befestigt und geschützt. Professionelle Sicherungssysteme und kontinuierliche Überwachung.' },
+      { title: 'Internationaler Transport', desc: 'Grenzüberschreitender europäischer Transport mit vollständiger Zollabwicklung und Dokumentation in EU-Ländern.' },
+      { title: 'Logistikberatung', desc: 'Routenoptimierung, Kostenanalyse und Lieferkettenberatung — wir helfen Ihnen, eine intelligentere und effizientere Logistik zu planen.' },
+      { title: 'Dedizierte Logistik', desc: 'Eine eigene Flotte und ein Fahrer exklusiv für Ihr Unternehmen — individuelle Routen, Zeitpläne und Fahrzeuge nach Ihren Bedürfnissen.' },
     ],
   },
   about: {

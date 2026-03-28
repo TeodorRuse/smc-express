@@ -15,12 +15,12 @@ export const fr: Translations = {
     tag: 'Ce Que Nous Faisons', title: 'Services Logistiques\nComplets',
     desc: 'D\'une seule palette à une refonte complète de la chaîne d\'approvisionnement — SMC Express livre la précision à chaque étape.',
     items: [
-      { title: 'Transport de Fret', desc: 'Solutions de chargement complet et partiel pour les marchandises nationales et transfrontalières avec suivi en temps réel.' },
-      { title: 'Livraison Express', desc: 'Expéditions urgentes gérées avec routage prioritaire et options de livraison le jour même ou le lendemain.' },
-      { title: 'Entreposage', desc: 'Installations de stockage sécurisées et climatisées avec gestion intégrée des stocks.' },
-      { title: 'Dernier Kilomètre', desc: 'Réseaux de livraison urbains et suburbains optimisés pour la vitesse et la précision.' },
-      { title: 'Chaîne du Froid', desc: 'Transport avec surveillance de la température pour les denrées périssables et les produits pharmaceutiques.' },
-      { title: 'Solutions Sur Mesure', desc: 'Architecture logistique bespoke construite autour de votre modèle opérationnel.' },
+      { title: 'Transport de Fret', desc: 'Solutions de chargement complet et partiel pour les marchandises nationales et transfrontalières avec suivi en temps réel et délais garantis.' },
+      { title: 'Livraison Rapide', desc: 'Expéditions urgentes gérées avec routage prioritaire, chauffeurs dédiés et options de livraison le jour même ou le lendemain.' },
+      { title: 'Sécurité du Fret', desc: 'Votre marchandise est sécurisée et protégée dans nos véhicules tout au long du trajet. Systèmes de fixation professionnels et surveillance continue.' },
+      { title: 'Transport International', desc: 'Transport transfrontalier européen avec gestion complète des douanes et documentation dans les pays de l\'UE.' },
+      { title: 'Conseil Logistique', desc: 'Optimisation des itinéraires, analyse des coûts et conseil en chaîne d\'approvisionnement — nous vous aidons à planifier une logistique plus intelligente.' },
+      { title: 'Logistique Dédiée', desc: 'Une flotte et un chauffeur dédiés exclusivement à votre entreprise — itinéraires personnalisés, horaires flexibles et véhicules adaptés.' },
     ],
   },
   about: {

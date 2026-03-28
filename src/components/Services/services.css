@@ -20,7 +20,11 @@
 }
 .svc-card:hover { background: var(--bg-light); }
 .svc-card:hover .svc-card__bar { width: 100%; }
-.svc-card__icon { font-size: 1.4rem; color: var(--amber); display: block; margin-bottom: 0.9rem; }
+.svc-card__icon {
+  display: block; width: 2rem; height: 2rem;
+  color: var(--amber); margin-bottom: 0.9rem;
+}
+.svc-card__icon svg { width: 100%; height: 100%; }
 .svc-card__title {
   font-family: var(--ff-cond); font-size: 1.1rem; font-weight: 700;
   letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.6rem;
