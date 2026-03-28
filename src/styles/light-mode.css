@@ -1,0 +1,48 @@
+/* ─── LIGHT MODE REFINEMENTS ─────────────────────────────────── */
+/* Stronger contrast, readable text, visible borders              */
+
+[data-theme="light"] .nav--scrolled {
+  box-shadow: 0 1px 14px rgba(17,29,51,0.10);
+}
+[data-theme="light"] .svc-card:hover {
+  background: #eaf0fb;
+}
+[data-theme="light"] .fleet-card {
+  border-color: rgba(30,60,130,0.12);
+}
+[data-theme="light"] .fleet-card:hover {
+  box-shadow: 0 6px 24px rgba(17,29,51,0.12);
+  border-color: var(--amber);
+}
+[data-theme="light"] .role-card:hover {
+  border-color: var(--amber);
+}
+[data-theme="light"] .contact__form {
+  border-color: rgba(30,60,130,0.12);
+  box-shadow: 0 2px 16px rgba(17,29,51,0.06);
+}
+[data-theme="light"] .t-card {
+  border-color: rgba(30,60,130,0.12);
+  box-shadow: 0 2px 14px rgba(17,29,51,0.06);
+}
+
+/* Footer: dark navy in light mode */
+[data-theme="light"] .footer {
+  background: var(--footer-bg);
+  border-top: 3px solid var(--amber);
+}
+[data-theme="light"] .footer .nav__logo-text,
+[data-theme="light"] .footer__grid > div strong {
+  color: #f0f3fa;
+}
+[data-theme="light"] .footer__brand p,
+[data-theme="light"] .footer__grid > div ul li a {
+  color: #8a96b0;
+}
+[data-theme="light"] .footer__grid > div ul li a:hover {
+  color: var(--amber);
+}
+[data-theme="light"] .footer__bottom {
+  border-top-color: rgba(255,255,255,0.08);
+  color: #6a7a95;
+}

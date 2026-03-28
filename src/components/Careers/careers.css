@@ -1,0 +1,30 @@
+/* ─── CAREERS SECTION ────────────────────────────────────────── */
+.careers { background: var(--bg) !important; }
+.careers__layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 4rem; align-items: start; }
+.careers__sub {
+  font-family: var(--ff-cond); font-size: 1rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text); margin-bottom: 1.25rem;
+}
+.roles-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.role-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 1rem 1.25rem;
+  transition: border-color var(--tr), transform var(--tr);
+}
+.role-card:hover { border-color: rgba(232,160,32,0.35); transform: translateX(3px); }
+.role-card__left { display: flex; flex-direction: column; gap: 0.25rem; }
+.role-card__title { font-family: var(--ff-cond); font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; }
+.role-card__loc { font-size: 0.8rem; color: var(--muted); }
+.role-card__right { display: flex; align-items: center; gap: 0.85rem; flex-shrink: 0; }
+.role-card__type {
+  font-family: var(--ff-cond); font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--muted); white-space: nowrap;
+}
+.perks-list { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 2rem; }
+.perks-list li { display: flex; align-items: flex-start; gap: 0.65rem; font-size: 0.92rem; color: var(--muted); line-height: 1.5; }
+.perk-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); flex-shrink: 0; margin-top: 0.45rem; }
+.careers__open-cta { border-top: 1px solid var(--border); padding-top: 1.5rem; }
+.careers__open-cta p { font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem; line-height: 1.55; }

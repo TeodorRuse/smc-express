@@ -1,0 +1,16 @@
+/* ─── CONTACT SECTION ────────────────────────────────────────── */
+.contact__inner { display: grid; grid-template-columns: 1fr 1.35fr; gap: 5rem; align-items: start; }
+.contact__info { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.5rem; }
+.contact__info div { display: flex; align-items: center; gap: 0.7rem; font-size: 0.88rem; color: var(--muted); }
+.contact__info a:hover { color: var(--amber); }
+.contact__form {
+  background: var(--form-bg); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 2.25rem;
+  display: flex; flex-direction: column; gap: 1.1rem;
+}
+.fg { display: flex; flex-direction: column; gap: 0.38rem; }
+.fg label {
+  font-family: var(--ff-cond); font-size: 0.72rem;
+  font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+.form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }

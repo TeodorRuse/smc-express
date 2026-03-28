@@ -1,0 +1,63 @@
+/* ─── TABLET (≤ 1024px) ──────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .svc-grid        { grid-template-columns: repeat(2,1fr); }
+  .fleet-grid      { grid-template-columns: repeat(2,1fr); }
+  .about__inner,
+  .contact__inner,
+  .coverage__inner { grid-template-columns: 1fr; gap: 3rem; }
+  .about__img      { height: 300px; }
+  .careers__layout { grid-template-columns: 1fr; gap: 3rem; }
+  .footer__grid    { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── MOBILE (≤ 768px) ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none; position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: var(--nav-bg); backdrop-filter: blur(14px);
+    flex-direction: column; align-items: stretch;
+    padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border);
+    gap: 0; z-index: 199;
+  }
+  .nav__links--open { display: flex; }
+  .nav__link { padding: 0.8rem 0; border-bottom: 1px solid var(--border); }
+  .nav__controls { flex-wrap: wrap; padding-top: 1rem; gap: 0.75rem; border-bottom: none; }
+  .nav__burger { display: flex; }
+  .hero__stats { grid-template-columns: repeat(2,1fr); }
+  .hero__scroll { display: none; }
+  .hero__route-map { opacity: 0.15; left: 0; top: 10%; bottom: 10%; }
+  .hero__city-label { display: none; }
+  .hero__pin-pulse { display: none; }
+  .svc-grid, .fleet-grid { grid-template-columns: 1fr; }
+  .stats-band__grid { grid-template-columns: repeat(2,1fr); }
+  .stats-band__item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 0.9rem 0; }
+  .footer__grid  { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 0.4rem; text-align: center; }
+  .form-row-2    { grid-template-columns: 1fr; }
+  .about__badge  { right: 0; }
+  .role-card     { flex-direction: column; align-items: flex-start; }
+  .role-card__right { margin-top: 0.5rem; }
+  .map-box { height: 280px; }
+  .t-carousel { min-height: 220px; }
+  .nav__logo-mark { font-size: 1.5rem; }
+  .nav__logo-text { font-size: 1.3rem; }
+}
+
+/* ─── SMALL PHONE (≤ 480px) ──────────────────────────────────── */
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .hero { padding: 0 1rem; }
+  .nav__inner { padding: 0 1rem; }
+  .section { padding: 4rem 0; }
+  .stats-band__grid { grid-template-columns: 1fr; }
+  .stats-band__val { font-size: 2rem; }
+  .hero__stats { grid-template-columns: 1fr; }
+  .map-box { height: 220px; }
+  .about__badge { bottom: -1rem; right: 0; padding: 0.9rem 1.1rem; }
+  .about__badge-num { font-size: 2rem; }
+  .t-carousel { min-height: 260px; }
+  .t-card { padding: 1.5rem; }
+  .contact__form { padding: 1.5rem; }
+  .footer__bottom { padding: 1.1rem 1rem; }
+}

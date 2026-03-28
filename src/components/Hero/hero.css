@@ -1,0 +1,252 @@
+/* ─── HERO SECTION ───────────────────────────────────────────── */
+.hero {
+  position: relative;
+  height: 100vh; min-height: 620px;
+  display: flex; flex-direction: column;
+  padding: 0 clamp(1rem, 3vw, 2.5rem);
+  overflow: hidden;
+}
+.hero__bg { position: absolute; inset: 0; z-index: 0; }
+.hero__bg-img {
+  position: absolute; inset: 0;
+  background: url('/images/hero-bg.jpg') center/cover no-repeat;
+  opacity: 0.18;
+}
+.hero__grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+[data-theme="light"] .hero__grid {
+  background-image:
+    linear-gradient(rgba(27,45,74,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27,45,74,0.03) 1px, transparent 1px);
+}
+.hero__glow {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 65% 55% at 58% 38%, rgba(232,160,32,0.09) 0%, transparent 60%),
+    linear-gradient(170deg, var(--bg) 0%, var(--bg-mid) 100%);
+}
+[data-theme="light"] .hero__glow {
+  background:
+    radial-gradient(ellipse 55% 45% at 50% 30%, rgba(232,149,42,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 45% 40% at 20% 70%, rgba(27,45,74,0.03) 0%, transparent 50%),
+    linear-gradient(175deg, #f8faff 0%, #edf2fb 100%);
+}
+.hero__body {
+  position: relative; z-index: 2;
+  max-width: clamp(420px, 45vw, 700px);
+  margin: auto 0;
+  padding-top: clamp(3.5rem, 7vh, 6rem);
+}
+.hero__eyebrow {
+  font-family: var(--ff-cond); font-size: clamp(0.7rem, 0.9vw, 0.85rem);
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--amber); margin-bottom: clamp(0.8rem, 1.5vh, 1.4rem);
+}
+.hero__title {
+  font-family: var(--ff-disp);
+  font-size: clamp(3.2rem, 7vw, 7.5rem);
+  line-height: 0.94; letter-spacing: 0.02em;
+  margin-bottom: clamp(0.8rem, 1.5vh, 1.4rem);
+}
+.hero__title em {
+  font-style: normal;
+  white-space: nowrap;
+  background: linear-gradient(90deg, var(--amber), #f5c842, var(--amber));
+  background-size: 200% auto;
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+.hero__sub {
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem); color: var(--muted);
+  max-width: clamp(320px, 32vw, 480px); line-height: 1.7;
+  margin-bottom: clamp(1.5rem, 3vh, 2.4rem);
+}
+.hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.hero__stats {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--border);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+.hero__stat {
+  background: var(--bg);
+  padding: clamp(1rem, 1.5vh, 1.4rem) clamp(1rem, 1.5vw, 1.6rem);
+  display: flex; flex-direction: column; gap: 0.2rem;
+}
+[data-theme="dark"] .hero__stat { background: rgba(11,15,26,0.7); }
+[data-theme="light"] .hero__stat { background: rgba(250,252,255,0.9); }
+.hero__stat-val {
+  font-family: var(--ff-disp); font-size: clamp(1.4rem, 2vw, 1.9rem);
+  color: var(--amber); letter-spacing: 0.02em;
+}
+.hero__stat-lbl {
+  font-family: var(--ff-cond); font-size: clamp(0.6rem, 0.75vw, 0.72rem);
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+.hero__scroll {
+  position: absolute; bottom: clamp(4rem, 8vh, 5.5rem); right: clamp(1.5rem, 2.5vw, 2.5rem); z-index: 2;
+  display: flex; align-items: center; gap: 0.75rem;
+  font-family: var(--ff-cond); font-size: 0.72rem;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--muted);
+  animation: scrollBob 2s ease-in-out infinite;
+}
+.hero__scroll-line { width: 38px; height: 1px; background: var(--muted); }
+
+/* ─── ROUTE MAP — fully % based ──────────────────────────────── */
+.hero__route-map {
+  position: absolute;
+  top: 10%;
+  bottom: 12%;
+  left: 32%;
+  right: 2%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* SVG overlay for route lines — stretches to fill container */
+.hero__route-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Route lines — coordinates are 0–100 matching city % */
+.hero__route-line {
+  stroke: var(--amber);
+  stroke-opacity: 0.16;
+  stroke-width: 0.12;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: drawRoute 0.8s ease forwards;
+}
+@keyframes drawRoute {
+  to { stroke-dashoffset: 0; }
+}
+
+/* City pin — positioned with % via inline style */
+.hero__pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: pinFadeIn 0.3s ease forwards;
+}
+@keyframes pinFadeIn {
+  to { opacity: 1; }
+}
+
+/* Dot — scales with viewport */
+.hero__pin-dot {
+  width: 0.3vw;
+  height: 0.3vw;
+  min-width: 3px;
+  min-height: 3px;
+  border-radius: 50%;
+  background: var(--amber);
+  opacity: 0.7;
+}
+.hero__pin--capital .hero__pin-dot {
+  width: 0.5vw;
+  height: 0.5vw;
+  min-width: 5px;
+  min-height: 5px;
+  opacity: 0.8;
+}
+
+/* Alba Iulia — dark dot, stands out */
+.hero__pin--alba .hero__pin-dot {
+  width: 1vw;
+  height: 1vw;
+  min-width: 10px;
+  min-height: 10px;
+  background: #0f1528;
+  opacity: 1;
+}
+[data-theme="light"] .hero__pin--alba .hero__pin-dot {
+  background: #1a2744;
+}
+
+/* Alba Iulia amber core inside dark dot */
+.hero__pin-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.4vw;
+  height: 0.4vw;
+  min-width: 4px;
+  min-height: 4px;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+/* Pulse rings — only on Alba Iulia */
+.hero__pin-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5vw;
+  height: 2.5vw;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  border: 1px solid #0f1528;
+  opacity: 0;
+  animation: ringPulse 3.5s ease-in-out infinite;
+}
+[data-theme="light"] .hero__pin-ring {
+  border-color: #1a2744;
+}
+.hero__pin-ring--delayed {
+  width: 1.6vw;
+  height: 1.6vw;
+  min-width: 16px;
+  min-height: 16px;
+  animation-delay: 1s;
+}
+@keyframes ringPulse {
+  0%   { transform: translate(-50%, -50%) scale(0.5); opacity: 0.4; }
+  50%  { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+}
+
+/* City labels — scale with viewport */
+.hero__pin-label {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 0.3vw));
+  font-family: var(--ff-cond);
+  font-size: clamp(5px, 0.55vw, 8px);
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.35;
+}
+.hero__pin--capital .hero__pin-label {
+  font-size: clamp(6px, 0.6vw, 9px);
+  opacity: 0.5;
+}
+.hero__pin--alba .hero__pin-label {
+  font-size: clamp(8px, 0.75vw, 11px);
+  color: var(--text);
+  opacity: 0.9;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}

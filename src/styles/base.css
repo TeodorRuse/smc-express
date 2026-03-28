@@ -1,0 +1,148 @@
+/* ─── FONTS ───────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@400;500;700&display=swap');
+
+/* ─── DESIGN TOKENS (DARK) ───────────────────────────────────── */
+:root[data-theme="dark"] {
+  --bg:         #0b0f1a;
+  --bg-mid:     #131929;
+  --bg-light:   #1c2438;
+  --slate:      #2a3350;
+  --border:     rgba(255,255,255,0.07);
+  --text:       #f0f3fa;
+  --muted:      #8a96b0;
+  --card-bg:    #0e1320;
+  --form-bg:    #131929;
+  --nav-bg:     rgba(11,15,26,0.96);
+  --footer-bg:  #070a13;
+  --shadow:     0 12px 48px rgba(0,0,0,0.5);
+}
+
+/* ─── DESIGN TOKENS (LIGHT) ──────────────────────────────────── */
+:root[data-theme="light"] {
+  --bg:         #f8faff;
+  --bg-mid:     #edf2fb;
+  --bg-light:   #dce6f4;
+  --slate:      #9aacc4;
+  --border:     rgba(30,60,130,0.14);
+  --text:       #111d33;
+  --muted:      #3d5575;
+  --card-bg:    #ffffff;
+  --form-bg:    #f5f7fc;
+  --nav-bg:     rgba(248,250,255,0.97);
+  --footer-bg:  #111d33;
+  --shadow:     0 4px 20px rgba(27,45,74,0.06);
+}
+
+/* ─── SHARED ACCENT TOKENS ───────────────────────────────────── */
+:root {
+  --amber:      #e8952a;
+  --amber-h:    #f0a030;
+  --amber-pale: #fff4e0;
+  --amber-dim:  rgba(232,149,42,0.12);
+  --ff-disp:    'Bebas Neue', sans-serif;
+  --ff-cond:    'Barlow Condensed', sans-serif;
+  --ff-body:    'Barlow', sans-serif;
+  --r:          4px;
+  --tr:         0.22s ease;
+}
+
+/* ─── RESET ──────────────────────────────────────────────────── */
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--ff-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background var(--tr), color var(--tr);
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; color: inherit; }
+input, textarea {
+  font-family: var(--ff-body);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--r);
+  padding: 0.75rem 1rem;
+  width: 100%;
+  font-size: 0.95rem;
+  transition: border-color var(--tr);
+}
+input::placeholder, textarea::placeholder { color: var(--muted); }
+input:focus, textarea:focus { outline: none; border-color: var(--amber); }
+textarea { resize: vertical; }
+
+/* ─── LAYOUT ─────────────────────────────────────────────────── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.section   { padding: 6rem 0; background: var(--bg); }
+
+/* ─── BUTTONS ────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.78rem 1.8rem;
+  border-radius: var(--r);
+  font-family: var(--ff-cond);
+  font-size: 0.95rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  transition: all var(--tr);
+}
+.btn--primary { background: var(--amber); color: #0b0f1a; }
+.btn--primary:hover { background: var(--amber-h); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(232,160,32,0.35); }
+.btn--ghost   { border: 1.5px solid var(--border); color: var(--text); }
+.btn--ghost:hover { border-color: var(--amber); color: var(--amber); }
+.btn--nav     { background: var(--amber); color: #0b0f1a; padding: 0.52rem 1.15rem; font-size: 0.82rem; }
+.btn--outline-sm {
+  border: 1.5px solid var(--amber); color: var(--amber);
+  padding: 0.35rem 0.9rem; font-size: 0.78rem;
+  font-family: var(--ff-cond); font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  border-radius: var(--r); transition: all var(--tr);
+}
+.btn--outline-sm:hover { background: var(--amber); color: #0b0f1a; }
+.btn--full { width: 100%; justify-content: center; }
+
+/* ─── ANIMATIONS ─────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes pulseDot {
+  0%,100% { transform: translate(-50%,-50%) scale(1); opacity: 1; }
+  50%      { transform: translate(-50%,-50%) scale(1.9); opacity: 0.35; }
+}
+@keyframes scrollBob {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(5px); }
+}
+
+.ai   { animation: fadeUp 0.65s ease both; }
+.ai--delay { animation-delay: 0.18s; }
+
+/* ─── SECTION HEADER ─────────────────────────────────────────── */
+.sh { text-align: center; margin-bottom: 3.5rem; }
+.sh__title {
+  font-family: var(--ff-disp);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.05; letter-spacing: 0.03em;
+  margin: 0.6rem 0 0.9rem;
+}
+.sh__desc { font-size: 1rem; color: var(--muted); max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+.tag {
+  display: inline-block;
+  font-family: var(--ff-cond); font-size: 0.75rem;
+  font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--amber);
+  border: 1px solid rgba(232,160,32,0.3);
+  padding: 0.22rem 0.7rem; border-radius: 2px;
+}
+
+/* ─── SHARED TEXT ─────────────────────────────────────────────── */
+.body-text { font-size: 0.95rem; color: var(--muted); line-height: 1.75; margin-bottom: 1rem; }

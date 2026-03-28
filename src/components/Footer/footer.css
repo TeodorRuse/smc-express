@@ -1,0 +1,23 @@
+/* ─── FOOTER ─────────────────────────────────────────────────── */
+.footer { background: var(--footer-bg); border-top: 1px solid var(--border); padding-top: 4rem; }
+.footer__grid {
+  display: grid; grid-template-columns: 1.5fr repeat(3,1fr);
+  gap: 3rem; padding-bottom: 3rem;
+}
+.footer__brand p { font-size: 0.88rem; color: var(--muted); margin-top: 0.65rem; max-width: 210px; line-height: 1.6; }
+.footer__brand .nav__logo-mark { color: var(--amber); }
+.footer__brand .nav__logo-text { color: var(--text); }
+.footer__grid > div strong {
+  display: block; font-family: var(--ff-cond); font-size: 0.75rem;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); margin-bottom: 1rem;
+}
+.footer__grid > div ul { display: flex; flex-direction: column; gap: 0.45rem; }
+.footer__grid > div ul li a { font-size: 0.85rem; color: var(--muted); transition: color var(--tr); }
+.footer__grid > div ul li a:hover { color: var(--amber); }
+.footer__bottom {
+  border-top: 1px solid var(--border);
+  padding: 1.1rem 2rem; max-width: 1200px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.75rem; color: var(--muted);
+  font-family: var(--ff-cond); letter-spacing: 0.04em;
+}

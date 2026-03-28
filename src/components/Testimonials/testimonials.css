@@ -1,0 +1,25 @@
+/* ─── TESTIMONIALS SECTION ───────────────────────────────────── */
+.testimonials { background: var(--bg-mid) !important; }
+.t-carousel { position: relative; min-height: 240px; margin-bottom: 1.75rem; }
+.t-card {
+  position: absolute; inset: 0;
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 2.25rem;
+  display: flex; flex-direction: column; justify-content: space-between;
+  opacity: 0; transform: translateX(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+.t-card--active { opacity: 1; transform: translateX(0); pointer-events: auto; }
+.t-card__quote { font-size: 1.05rem; line-height: 1.7; color: var(--text); font-weight: 300; font-style: italic; margin-bottom: 1.5rem; }
+.t-card__author { display: flex; align-items: center; gap: 0.9rem; }
+.t-card__avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  object-fit: cover; flex-shrink: 0;
+  border: 2px solid var(--amber);
+}
+.t-card__author strong { display: block; font-family: var(--ff-cond); font-size: 0.95rem; font-weight: 700; letter-spacing: 0.04em; }
+.t-card__author span { font-size: 0.8rem; color: var(--muted); }
+.t-dots { display: flex; justify-content: center; gap: 0.45rem; }
+.t-dot { width: 26px; height: 3px; border-radius: 2px; background: var(--slate); transition: background 0.3s, width 0.3s; }
+.t-dot--active { background: var(--amber); width: 42px; }
