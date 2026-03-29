@@ -4,7 +4,7 @@ import type { Translations } from './types';
 export const de: Translations = {
   nav: { services: 'Leistungen', about: 'Über uns', fleet: 'Fuhrpark', coverage: 'Abdeckung', careers: 'Karriere', contact: 'Kontakt', getQuote: 'Mit Uns Versenden' },
   hero: {
-    eyebrow: 'Schnell. Sicher. Geliefert.',
+    eyebrow: 'Schnell & Sicher',
     titleLine1: 'Ihre Fracht',
     titleLine2: 'Unsere Mission',
     subtitle: 'Weltweite Frachtlösungen, aufgebaut auf Schnelligkeit und Sicherheit — wir liefern, was zählt, wohin es auch gehen muss.',
@@ -70,20 +70,27 @@ export const de: Translations = {
     ],
   },
   contact: {
-    tag: 'Kontakt', title: 'Gemeinsam\nEtwas Bewegen',
-    body: 'Teilen Sie uns Ihre Sendungsdetails mit und wir haben innerhalb von 4 Werktunden ein maßgeschneidertes Angebot in Ihrem Posteingang.',
+    tag: 'Kontakt', title: 'Gemeinsam\nArbeiten',
+    body: 'Wir suchen immer engagierte Menschen für unser Team. Ob erfahrener Fahrer oder auf der Suche nach einer neuen Chance in der Logistik — wir freuen uns von Ihnen zu hören.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Vollständiger Name', company: 'Unternehmen', emailLabel: 'E-Mail', origin: 'Herkunft', destination: 'Zielort', cargo: 'Frachtdetails',
-      namePh: 'Ihr Name', companyPh: 'Ihr Unternehmen', emailPh: 'sie@unternehmen.de', originPh: 'Stadt / Land', destPh: 'Stadt / Land', cargoPh: 'Gewicht, Abmessungen, besondere Anforderungen...', submit: 'Anfrage senden',
+      name: 'Vollständiger Name', phoneLabel: 'Telefon', emailLabel: 'E-Mail', position: 'Gewünschte Position', city: 'Stadt', message: 'Nachricht',
+      namePh: 'Ihr vollständiger Name', phonePh: '+40 ...', emailPh: 'ihre@email.de', positionPh: 'Welche Position interessiert Sie?', cityPh: 'Ihre Stadt', messagePh: 'Erzählen Sie uns über sich, Ihre Erfahrung und warum Sie mit uns arbeiten möchten...', submit: 'Bewerbung Senden',
     },
   },
   footer: {
-    tagline: 'Präzisionslogistik für eine bewegte Welt.',
-    company: 'Unternehmen', companyLinks: ['Über uns', 'Karriere', 'Presse', 'Zertifizierungen'],
-    services: 'Leistungen', serviceLinks: ['Fracht', 'Express', 'Lagerung', 'Kühlkette'],
-    support: 'Support', supportLinks: ['Sendung verfolgen', 'FAQ', 'Rechtliches', 'Datenschutz'],
+    tagline: 'Schnell. Sicher. Geliefert.',
+    navigation: 'Schnellzugriff',
+    navLinks: [
+      { label: 'Leistungen', sectionId: 'services' },
+      { label: 'Über uns', sectionId: 'about' },
+      { label: 'Fuhrpark', sectionId: 'fleet' },
+      { label: 'Karriere', sectionId: 'careers' },
+      { label: 'Kontakt', sectionId: 'contact' },
+    ],
+    contactTitle: 'Kontakt',
     legal: '© 2026 SMC Express __LEGAL_NAME__ — Alle Rechte vorbehalten.',
     vat: 'Eingetragen in Rumänien · USt-ID __VAT_NUMBER__',
+    madeWith: 'Mit Leidenschaft in Rumänien gemacht',
   },
 };

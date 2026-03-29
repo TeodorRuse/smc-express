@@ -158,21 +158,21 @@ textarea { resize: vertical; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(11, 15, 26, 0.55);
-  backdrop-filter: blur(2px);
+  background: rgba(11, 15, 26, 0.45);
+  backdrop-filter: blur(3px);
 }
 [data-theme="light"] .maintenance-overlay {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(248, 250, 255, 0.55);
 }
-.maintenance-label {
-  font-family: var(--ff-disp);
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+.maintenance-gear {
+  width: clamp(48px, 6vw, 80px);
+  height: clamp(48px, 6vw, 80px);
   color: var(--amber);
-  opacity: 0.7;
-  padding: 0.8rem 2rem;
-  border: 2px solid var(--amber);
-  border-radius: 4px;
-  transform: rotate(-5deg);
+  opacity: 0.6;
+  animation: gearSpin 8s linear infinite;
+  filter: drop-shadow(0 2px 8px rgba(232,149,42,0.3));
+}
+@keyframes gearSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }

@@ -37,34 +37,41 @@
 }
 .hero__body {
   position: relative; z-index: 2;
-  max-width: clamp(420px, 45vw, 700px);
+  max-width: min(100%, clamp(420px, 45vw, 700px));
   margin: auto 0;
   padding-top: clamp(3.5rem, 7vh, 6rem);
 }
+/* Eyebrow — small motto tag, generous space below */
 .hero__eyebrow {
-  font-family: var(--ff-cond); font-size: clamp(0.7rem, 0.9vw, 0.85rem);
-  letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--amber); margin-bottom: clamp(0.8rem, 1.5vh, 1.4rem);
+  font-family: var(--ff-cond);
+  font-size: 0.8vw;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 2vh;
 }
+
+/* Title — big display, tight line-height, more space below */
 .hero__title {
   font-family: var(--ff-disp);
-  font-size: clamp(3.2rem, 7vw, 7.5rem);
-  line-height: 0.94; letter-spacing: 0.02em;
-  margin-bottom: clamp(0.8rem, 1.5vh, 1.4rem);
+  font-size: 5.5vw;
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  margin-bottom: 2vh;
 }
 .hero__title em {
   font-style: normal;
   white-space: nowrap;
-  background: linear-gradient(90deg, var(--amber), #f5c842, var(--amber));
-  background-size: 200% auto;
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 3s linear infinite;
+  color: var(--amber);
 }
+
+/* Subtitle — slightly larger, more readable, clear gap to buttons */
 .hero__sub {
-  font-size: clamp(0.9rem, 1.1vw, 1.05rem); color: var(--muted);
-  max-width: clamp(320px, 32vw, 480px); line-height: 1.7;
-  margin-bottom: clamp(1.5rem, 3vh, 2.4rem);
+  font-size: 0.95vw;
+  color: var(--muted);
+  max-width: 30vw;
+  line-height: 1.75;
+  margin-bottom: 3.5vh;
 }
 .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -103,9 +110,9 @@
 /* ─── ROUTE MAP — fully % based ──────────────────────────────── */
 .hero__route-map {
   position: absolute;
-  top: 9%;
-  bottom: 10%;
-  left: 8%;
+  top: 12%;
+  bottom: 7%;
+  left: 23%;
   right: -8%;
   z-index: 1;
   pointer-events: none;

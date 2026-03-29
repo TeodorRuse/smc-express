@@ -1,58 +1,24 @@
 import { useInView } from '../../hooks/useInView';
+import { ContactInfo } from './ContactInfo';
+import { ContactForm } from './ContactForm';
 import type { Translations } from '../../translations';
 
-/** Contact section with company info and a quote request form. */
+/** Contact section — info panel on the left, form on the right. */
 export function Contact({ t }: { t: Translations }) {
   const [contactRef, contactInView] = useInView(0.08);
 
   return (
     <section className="section contact" id="contact" ref={contactRef as React.RefObject<HTMLElement>}>
       <div className="container contact__inner">
-        <div className={`contact__copy ${contactInView ? 'ai' : ''}`}>
-          <span className="tag">{t.contact.tag}</span>
-          <h2 className="sh__title">
-            {t.contact.title.split('\n').map((l, i) => (
-              <span key={i}>{l}{i < t.contact.title.split('\n').length - 1 && <br />}</span>
-            ))}
-          </h2>
-          <p className="body-text">{t.contact.body}</p>
-          <div className="contact__info">
-            <div><span>📞</span><a href={`tel:${t.contact.phone}`}>{t.contact.phone}</a></div>
-            <div><span>✉️</span><a href={`mailto:${t.contact.email}`}>{t.contact.email}</a></div>
-            <div><span>📍</span><span>{t.contact.address}</span></div>
+        <ContactInfo t={t} inView={contactInView} />
+        <div className="maintenance-wrap">
+          <ContactForm t={t} inView={contactInView} />
+          <div className="maintenance-overlay">
+            <svg className="maintenance-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
           </div>
-        </div>
-
-        <div className={`contact__form ${contactInView ? 'ai ai--delay' : ''}`}>
-          <div className="form-row-2">
-            <div className="fg">
-              <label>{t.contact.form.name}</label>
-              <input type="text" placeholder={t.contact.form.namePh} />
-            </div>
-            <div className="fg">
-              <label>{t.contact.form.company}</label>
-              <input type="text" placeholder={t.contact.form.companyPh} />
-            </div>
-          </div>
-          <div className="fg">
-            <label>{t.contact.form.emailLabel}</label>
-            <input type="email" placeholder={t.contact.form.emailPh} />
-          </div>
-          <div className="form-row-2">
-            <div className="fg">
-              <label>{t.contact.form.origin}</label>
-              <input type="text" placeholder={t.contact.form.originPh} />
-            </div>
-            <div className="fg">
-              <label>{t.contact.form.destination}</label>
-              <input type="text" placeholder={t.contact.form.destPh} />
-            </div>
-          </div>
-          <div className="fg">
-            <label>{t.contact.form.cargo}</label>
-            <textarea placeholder={t.contact.form.cargoPh} rows={4} />
-          </div>
-          <button className="btn btn--primary btn--full">{t.contact.form.submit}</button>
         </div>
       </div>
     </section>

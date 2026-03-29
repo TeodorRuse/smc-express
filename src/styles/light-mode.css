@@ -29,17 +29,29 @@
 /* Footer: dark navy in light mode */
 [data-theme="light"] .footer {
   background: var(--footer-bg);
+}
+[data-theme="light"] .footer__motto-bar {
   border-top: 3px solid var(--amber);
+  border-bottom: none;
+}
+[data-theme="light"] .footer__motto-line {
+  background: rgba(255,255,255,0.12);
 }
 [data-theme="light"] .footer .nav__logo-text,
 [data-theme="light"] .footer__grid > div strong {
   color: #f0f3fa;
 }
-[data-theme="light"] .footer__brand p,
-[data-theme="light"] .footer__grid > div ul li a {
+[data-theme="light"] .footer__tagline,
+[data-theme="light"] .footer__nav-link,
+[data-theme="light"] .footer__contact-list li,
+[data-theme="light"] .footer__contact-list a {
   color: #8a96b0;
 }
-[data-theme="light"] .footer__grid > div ul li a:hover {
+[data-theme="light"] .footer__made-with {
+  color: #5a6a85;
+}
+[data-theme="light"] .footer__nav-link:hover,
+[data-theme="light"] .footer__contact-list a:hover {
   color: var(--amber);
 }
 [data-theme="light"] .footer__bottom {

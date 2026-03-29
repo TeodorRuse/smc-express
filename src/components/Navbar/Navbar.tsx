@@ -87,9 +87,9 @@ export function Navbar({ t, lang, setLang, dark, setDark, scrollTo }: NavbarProp
                         className={`lang-picker__option ${l.code === lang ? 'lang-picker__option--active' : ''}`}
                         onClick={() => { setLang(l.code); setIsLanguageDropdownOpen(false); }}
                       >
-                        <span>{l.code.toUpperCase()}</span>
-                        <span>{l.label}</span>
                         <img src={l.flagUrl} alt={l.label} className="lang-picker__flag" />
+                        <span>{l.label}</span>
+                        <span className="lang-picker__option-code">{l.code.toUpperCase()}</span>
                       </button>
                     </li>
                   ))}

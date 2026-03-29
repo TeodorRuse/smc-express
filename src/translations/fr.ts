@@ -4,7 +4,7 @@ import type { Translations } from './types';
 export const fr: Translations = {
   nav: { services: 'Services', about: 'À propos', fleet: 'Flotte', coverage: 'Couverture', careers: 'Carrières', contact: 'Contact', getQuote: 'Expédiez Avec Nous' },
   hero: {
-    eyebrow: 'Vitesse. Sécurité. Livré.',
+    eyebrow: 'Rapide & Sûr',
     titleLine1: 'Votre Cargo',
     titleLine2: 'Notre Mission',
     subtitle: 'Solutions de fret mondiales fondées sur la vitesse et la sécurité — nous livrons ce qui compte, où que ce soit.',
@@ -70,20 +70,27 @@ export const fr: Translations = {
     ],
   },
   contact: {
-    tag: 'Nous Contacter', title: 'Bougeons\nEnsemble',
-    body: 'Parlez-nous de votre expédition et nous aurons une proposition sur mesure dans votre boîte de réception dans les 4 heures ouvrables.',
+    tag: 'Nous Contacter', title: 'Travaillons\nEnsemble',
+    body: 'Nous recherchons toujours des personnes dévouées pour rejoindre notre équipe. Que vous soyez chauffeur expérimenté ou à la recherche d\'une nouvelle opportunité en logistique, nous serions ravis de vous entendre.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Nom Complet', company: 'Entreprise', emailLabel: 'E-mail', origin: 'Origine', destination: 'Destination', cargo: 'Détails de la Marchandise',
-      namePh: 'Votre nom', companyPh: 'Votre entreprise', emailPh: 'vous@entreprise.fr', originPh: 'Ville / Pays', destPh: 'Ville / Pays', cargoPh: 'Poids, dimensions, exigences spéciales...', submit: 'Envoyer la Demande',
+      name: 'Nom Complet', phoneLabel: 'Téléphone', emailLabel: 'E-mail', position: 'Poste Souhaité', city: 'Ville', message: 'Message',
+      namePh: 'Votre nom complet', phonePh: '+40 ...', emailPh: 'votre@email.fr', positionPh: 'Quel poste vous intéresse ?', cityPh: 'Votre ville', messagePh: 'Parlez-nous de vous, de votre expérience et de pourquoi vous souhaitez travailler avec nous...', submit: 'Envoyer la Candidature',
     },
   },
   footer: {
-    tagline: 'Logistique de précision pour un monde en mouvement.',
-    company: 'Entreprise', companyLinks: ['À propos', 'Carrières', 'Presse', 'Certifications'],
-    services: 'Services', serviceLinks: ['Fret', 'Express', 'Entreposage', 'Chaîne du Froid'],
-    support: 'Support', supportLinks: ['Suivre Expédition', 'FAQ', 'Mentions Légales', 'Confidentialité'],
+    tagline: 'Vitesse. Sécurité. Livré.',
+    navigation: 'Liens Rapides',
+    navLinks: [
+      { label: 'Services', sectionId: 'services' },
+      { label: 'À propos', sectionId: 'about' },
+      { label: 'Flotte', sectionId: 'fleet' },
+      { label: 'Carrières', sectionId: 'careers' },
+      { label: 'Contact', sectionId: 'contact' },
+    ],
+    contactTitle: 'Contact',
     legal: '© 2026 SMC Express __LEGAL_NAME__ — Tous droits réservés.',
     vat: 'Enregistré en Roumanie · TVA __VAT_NUMBER__',
+    madeWith: 'Fait avec passion en Roumanie',
   },
 };

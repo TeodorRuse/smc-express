@@ -141,4 +141,4 @@ Adding a new language requires creating one translation file and registering it 
 
 ## License
 
-MIT License — Copyright (c) 2026 AriiSM and Ruse Teodor. See [LICENSE](LICENSE) for details.
+MIT License — Copyright (c) 2026 AriiSM and TeoR. See [LICENSE](LICENSE) for details.

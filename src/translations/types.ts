@@ -102,29 +102,27 @@ export interface Translations {
     address: string;
     form: {
       name: string;
-      company: string;
+      phoneLabel: string;
       emailLabel: string;
-      origin: string;
-      destination: string;
-      cargo: string;
+      position: string;
+      city: string;
+      message: string;
       namePh: string;
-      companyPh: string;
+      phonePh: string;
       emailPh: string;
-      originPh: string;
-      destPh: string;
-      cargoPh: string;
+      positionPh: string;
+      cityPh: string;
+      messagePh: string;
       submit: string;
     };
   };
   footer: {
     tagline: string;
-    company: string;
-    companyLinks: string[];
-    services: string;
-    serviceLinks: string[];
-    support: string;
-    supportLinks: string[];
+    navigation: string;
+    navLinks: { label: string; sectionId: string }[];
+    contactTitle: string;
     legal: string;
     vat: string;
+    madeWith: string;
   };
 }
