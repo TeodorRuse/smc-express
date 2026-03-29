@@ -1,5 +1,5 @@
 {
-	"name": "smc-express-web",
+	"name": "smc-express",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
