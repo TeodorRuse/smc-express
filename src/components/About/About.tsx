@@ -20,7 +20,7 @@ export function About({ t }: { t: Translations }) {
             />
           </div>
           <div className="about__badge">
-            <b className="about__badge-num">12</b>
+            <b className="about__badge-num">{new Date().getFullYear() - 2010}</b>
             <span className="about__badge-lbl">{t.about.badge}</span>
           </div>
         </div>

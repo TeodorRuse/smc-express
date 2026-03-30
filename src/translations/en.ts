@@ -32,7 +32,7 @@ export const en: Translations = {
   about: {
     tag: 'Who We Are',
     title: 'Your Cargo.\nOur Promise.',
-    body1: 'Founded in __YEAR__, SMC Express began as __ORIGIN_STORY__. What started small has grown through dedication, hard work, and a simple belief: your cargo deserves the same care we\'d give our own.',
+    body1: 'Founded in 2010, SMC Express began as a bold idea born in an entirely different field. It all started with a single vehicle, a lot of hard work and determination, and step by step, we grew into what SMC Express is today. What started small has grown through dedication, perseverance, and a simple belief: your cargo deserves the same care we\'d give our own.',
     body2: 'Every shipment we handle carries someone\'s promise to their customer. We understand that responsibility. That\'s why we invest in our people, maintain our fleet to the highest standards, and stay available whenever you need us. With SMC Express, you\'re not just a client — you\'re a partner.',
     pillars: ['Cargo Security', 'Modern Fleet', 'European Coverage', 'Experience & Trust'],
     badge: 'Years of Excellence',
@@ -49,9 +49,9 @@ export const en: Translations = {
     capacity: 'Capacity', fleetSize: 'Fleet Size',
   },
   coverage: {
-    tag: 'Coverage', title: '28 Countries.\nOne Network.',
-    body: 'Our pan-European network spans from Lisbon to Bucharest, and from Stockholm to Athens — with strategic hub locations in Warsaw, Vienna, Lyon, and Munich ensuring 48-hour reach to any destination on the continent.',
-    regions: ['Western Europe', 'Central & Eastern Europe', 'Baltic States', 'Balkan Region', 'Scandinavia'],
+    tag: 'Our Routes', title: 'From Alba Iulia\nTo Every Corner of Europe.',
+    body: 'From Alba Iulia to every corner of Europe, your cargo, delivered on time with the care and professionalism it deserves. Wherever the destination, we make sure it gets there.',
+    regions: ['EU Wide', 'Express', 'Door-to-Door', 'On Time', 'Safe & Tracked'],
     mapLabel: 'Europe Coverage Map',
   },
   careers: {
@@ -97,8 +97,13 @@ export const en: Translations = {
       { label: 'Contact', sectionId: 'contact' },
     ],
     contactTitle: 'Contact',
+    legalTitle: 'Legal',
     legal: '© 2026 SMC Express __LEGAL_NAME__ — All rights reserved.',
     vat: 'Registered in Romania · VAT __VAT_NUMBER__',
     madeWith: 'Made with passion in Romania',
+    privacyPolicy: 'Privacy Policy',
+    termsConditions: 'Terms & Conditions',
+    cookiePolicy: 'Cookie Policy',
+    gdpr: 'Data Protection (GDPR)',
   },
 };

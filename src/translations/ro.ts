@@ -32,8 +32,8 @@ export const ro: Translations = {
   about: {
     tag: 'Cine Suntem',
     title: 'Marfa Dumneavoastră.\nPromisiunea Noastră.',
-    body1: 'Fondată în __YEAR__, SMC Express a început ca __ORIGIN_STORY__. Ceea ce a început modest a crescut prin dedicare, muncă asiduă și o convingere simplă: marfa dumneavoastră merită aceeași grijă pe care am acorda-o propriei noastre mărfi.',
-    body2: 'Fiecare transport pe care îl gestionăm poartă promisiunea cuiva către clientul său. Înțelegem această responsabilitate. De aceea investim în oamenii noștri, întreținem flota la cele mai înalte standarde și suntem mereu disponibili. Cu SMC Express, nu sunteți doar un client — sunteți un partener.',
+    body1: 'Fondată în 2010, SMC Express a început ca o idee curajoasă, născută într-un cu totul alt domeniu. Totul a pornit de la o singură mașină, multă muncă și determinare, iar pas cu pas, am ajuns la ceea ce este astăzi SMC Express. Ceea ce a început modest a crescut prin dedicare, perseverență și o convingere simplă: marfa dumneavoastră merită aceeași grijă pe care am acorda-o propriei noastre mărfi.',
+    body2: 'Fiecare transport pe care îl gestionăm poartă promisiunea cuiva către clientul său. Înțelegem această responsabilitate. De aceea investim în oamenii noștri, întreținem flota la cele mai înalte standarde și suntem întotdeauna disponibili. Cu SMC Express, nu sunteți doar un client — sunteți un partener.',
     pillars: ['Siguranța Mărfii', 'Flotă Modernă', 'Acoperire Europeană', 'Experiență & Încredere'],
     badge: 'Ani de Excelență',
   },
@@ -49,9 +49,9 @@ export const ro: Translations = {
     capacity: 'Capacitate', fleetSize: 'Flotă',
   },
   coverage: {
-    tag: 'Acoperire', title: '28 de Țări.\nO Rețea.',
-    body: 'Rețeaua noastră pan-europeană se întinde de la Lisabona la București și de la Stockholm la Atena — cu huburi strategice în Varșovia, Viena, Lyon și Munchen, asigurând acoperire în 48 de ore pe tot continentul.',
-    regions: ['Europa de Vest', 'Europa Centrală și de Est', 'Statele Baltice', 'Regiunea Balcanică', 'Scandinavia'],
+    tag: 'Rutele Noastre', title: 'Din Alba Iulia\nÎn Fiecare Colț al Europei.',
+    body: 'Din Alba Iulia în fiecare colț al Europei, marfa dumneavoastră, livrată la timp cu grija și profesionalismul pe care le merită. Oricare ar fi destinația, ne asigurăm că ajunge acolo.',
+    regions: ['Toată Europa', 'Express', 'Din Ușă în Ușă', 'La Timp', 'Sigur & Monitorizat'],
     mapLabel: 'Harta Acoperirii Europene',
   },
   careers: {
@@ -97,8 +97,13 @@ export const ro: Translations = {
       { label: 'Contact', sectionId: 'contact' },
     ],
     contactTitle: 'Contact',
+    legalTitle: 'Legal',
     legal: '© 2026 SMC Express __LEGAL_NAME__ — Toate drepturile rezervate.',
-    vat: 'Înregistrat în România · TVA __VAT_NUMBER__',
+    vat: 'Înregistrat în România · CUI __VAT_NUMBER__',
     madeWith: 'Făcut cu pasiune în România',
+    privacyPolicy: 'Politica de Confidențialitate',
+    termsConditions: 'Termeni și Condiții',
+    cookiePolicy: 'Politica de Cookie-uri',
+    gdpr: 'Protecția Datelor (GDPR)',
   },
 };

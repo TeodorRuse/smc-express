@@ -25,7 +25,7 @@ export const de: Translations = {
   },
   about: {
     tag: 'Wer wir sind', title: 'Ihre Fracht.\nUnser Versprechen.',
-    body1: 'Im Jahr __YEAR__ gegründet, begann SMC Express als __ORIGIN_STORY__. Was klein begann, ist durch Engagement, harte Arbeit und eine einfache Überzeugung gewachsen: Ihre Fracht verdient die gleiche Sorgfalt, die wir unserer eigenen widmen würden.',
+    body1: 'Im Jahr 2010 gegründet, begann SMC Express als eine mutige Idee, geboren in einem völlig anderen Bereich. Alles begann mit einem einzigen Fahrzeug, viel Arbeit und Entschlossenheit, und Schritt für Schritt wuchsen wir zu dem, was SMC Express heute ist. Was klein begann, ist durch Engagement, Beharrlichkeit und eine einfache Überzeugung gewachsen: Ihre Fracht verdient die gleiche Sorgfalt, die wir unserer eigenen widmen würden.',
     body2: 'Jede Sendung, die wir transportieren, trägt das Versprechen jemandes an seinen Kunden. Wir verstehen diese Verantwortung. Deshalb investieren wir in unsere Mitarbeiter, pflegen unsere Flotte nach höchsten Standards und sind jederzeit für Sie da. Bei SMC Express sind Sie nicht nur Kunde — Sie sind Partner.',
     pillars: ['Ladungssicherheit', 'Moderne Flotte', 'Europaweite Abdeckung', 'Erfahrung & Vertrauen'],
     badge: 'Jahre Exzellenz',
@@ -42,9 +42,9 @@ export const de: Translations = {
     capacity: 'Kapazität', fleetSize: 'Fuhrparkgröße',
   },
   coverage: {
-    tag: 'Abdeckung', title: '28 Länder.\nEin Netzwerk.',
-    body: 'Unser paneuropäisches Netzwerk erstreckt sich von Lissabon bis Bukarest und von Stockholm bis Athen — mit strategischen Hubstandorten in Warschau, Wien, Lyon und München.',
-    regions: ['Westeuropa', 'Mittel- & Osteuropa', 'Baltische Staaten', 'Balkanregion', 'Skandinavien'],
+    tag: 'Unsere Routen', title: 'Von Alba Iulia\nIn Jeden Winkel Europas.',
+    body: 'Von Alba Iulia in jeden Winkel Europas, Ihre Fracht, pünktlich geliefert mit der Sorgfalt und Professionalität, die sie verdient. Egal wohin, wir sorgen dafür, dass sie ankommt.',
+    regions: ['EU-Weit', 'Express', 'Tür-zu-Tür', 'Pünktlich', 'Sicher & Verfolgt'],
     mapLabel: 'Europa-Abdeckungskarte',
   },
   careers: {
@@ -89,8 +89,13 @@ export const de: Translations = {
       { label: 'Kontakt', sectionId: 'contact' },
     ],
     contactTitle: 'Kontakt',
+    legalTitle: 'Rechtliches',
     legal: '© 2026 SMC Express __LEGAL_NAME__ — Alle Rechte vorbehalten.',
     vat: 'Eingetragen in Rumänien · USt-ID __VAT_NUMBER__',
     madeWith: 'Mit Leidenschaft in Rumänien gemacht',
+    privacyPolicy: 'Datenschutzerklärung',
+    termsConditions: 'Allgemeine Geschäftsbedingungen',
+    cookiePolicy: 'Cookie-Richtlinie',
+    gdpr: 'Datenschutz (DSGVO)',
   },
 };

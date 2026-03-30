@@ -121,8 +121,13 @@ export interface Translations {
     navigation: string;
     navLinks: { label: string; sectionId: string }[];
     contactTitle: string;
+    legalTitle: string;
     legal: string;
     vat: string;
     madeWith: string;
+    privacyPolicy: string;
+    termsConditions: string;
+    cookiePolicy: string;
+    gdpr: string;
   };
 }

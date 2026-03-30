@@ -55,8 +55,8 @@ export default function App() {
       <Services t={t} />
       <About t={t} />
       <StatsBand t={t} />
-      <MaintenanceOverlay><Fleet t={t} /></MaintenanceOverlay>
-      <MaintenanceOverlay><Coverage t={t} /></MaintenanceOverlay>
+      {/* <MaintenanceOverlay><Fleet t={t} /></MaintenanceOverlay> */}
+      <Coverage t={t} />
       <MaintenanceOverlay><Careers t={t} /></MaintenanceOverlay>
       <MaintenanceOverlay><Testimonials t={t} /></MaintenanceOverlay>
       <Contact t={t} />

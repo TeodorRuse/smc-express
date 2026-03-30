@@ -28,7 +28,7 @@
 
 /* ─── Main grid ──────────────────────────────────────────────── */
 .footer__grid {
-  display: grid; grid-template-columns: 1.5fr 1fr 1.2fr;
+  display: grid; grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
   gap: 3rem; padding-bottom: 3rem;
 }
 
@@ -71,10 +71,12 @@
   display: flex; align-items: center;
 }
 .footer__contact-icon svg { width: 100%; height: 100%; }
-.footer__contact-list a {
-  color: var(--muted); transition: color var(--tr);
+
+/* Legal links column */
+.footer__legal-link {
+  font-size: 0.85rem; color: var(--muted);
+  font-family: var(--ff-body);
 }
-.footer__contact-list a:hover { color: var(--amber); }
 
 /* Legal bottom bar */
 .footer__bottom {
