@@ -34,7 +34,7 @@
 
 /* Brand column */
 .footer__brand .nav__logo-img {
-  height: 48px; width: 48px;
+  height: 120px; width: 120px;
 }
 .footer__brand .nav__logo-text { color: var(--text); }
 .footer__tagline {

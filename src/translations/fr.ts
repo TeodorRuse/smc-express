@@ -71,11 +71,16 @@ export const fr: Translations = {
   },
   contact: {
     tag: 'Nous Contacter', title: 'Travaillons\nEnsemble',
-    body: 'Nous recherchons toujours des personnes dévouées pour rejoindre notre équipe. Que vous soyez chauffeur expérimenté ou à la recherche d\'une nouvelle opportunité en logistique, nous serions ravis de vous entendre.',
+    body: 'Que vous ayez besoin d\'un devis transport, souhaitiez explorer un partenariat ou cherchiez à rejoindre notre équipe — nous serions ravis de vous entendre.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Nom Complet', phoneLabel: 'Téléphone', emailLabel: 'E-mail', position: 'Poste Souhaité', city: 'Ville', message: 'Message',
-      namePh: 'Votre nom complet', phonePh: '+40 ...', emailPh: 'votre@email.fr', positionPh: 'Quel poste vous intéresse ?', cityPh: 'Votre ville', messagePh: 'Parlez-nous de vous, de votre expérience et de pourquoi vous souhaitez travailler avec nous...', submit: 'Envoyer la Candidature',
+      name: 'Nom Complet', phoneLabel: 'Téléphone', emailLabel: 'E-mail',
+      subject: 'Sujet', subjectOptions: ['Demande Générale', 'Devis Transport', 'Partenariat Commercial', 'Opportunité de Carrière'],
+      company: 'Société', message: 'Message',
+      namePh: 'Votre nom complet', phonePh: '+40 ...', emailPh: 'votre@email.fr',
+      subjectPh: 'Sélectionnez un sujet', companyPh: 'Nom de la société (facultatif)',
+      messagePh: 'Comment pouvons-nous vous aider ? Parlez-nous de vos besoins, questions ou de la façon dont vous souhaitez collaborer...', submit: 'Envoyer le Message',
+      successTitle: 'Message Envoyé !', successText: 'Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.', sendAnother: 'Envoyer un Autre Message',
     },
   },
   footer: {

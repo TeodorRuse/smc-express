@@ -57,8 +57,18 @@ export default function App() {
       <StatsBand t={t} />
       {/* <MaintenanceOverlay><Fleet t={t} /></MaintenanceOverlay> */}
       <Coverage t={t} />
-      <MaintenanceOverlay><Careers t={t} /></MaintenanceOverlay>
-      <MaintenanceOverlay><Testimonials t={t} /></MaintenanceOverlay>
+
+      {/* Motto divider between Coverage and Contact */}
+      <div className="section-divider">
+        <div className="container section-divider__inner">
+          <span className="section-divider__line" />
+          <span className="section-divider__text">Marfa Ta · Drumul Nostru</span>
+          <span className="section-divider__line" />
+        </div>
+      </div>
+
+      {/* <MaintenanceOverlay><Careers t={t} /></MaintenanceOverlay>*/}
+      {/* <MaintenanceOverlay><Testimonials t={t} /></MaintenanceOverlay>*/}
       <Contact t={t} />
       <Footer t={t} scrollTo={scrollTo} />
     </div>

@@ -71,11 +71,16 @@ export const es: Translations = {
   },
   contact: {
     tag: 'Contáctanos', title: 'Trabajemos\nJuntos',
-    body: 'Siempre buscamos personas dedicadas para unirse a nuestro equipo. Ya seas conductor experimentado o busques una nueva oportunidad en logística, nos encantaría saber de ti.',
+    body: 'Ya sea que necesites una cotización de transporte, quieras explorar una alianza o estés buscando unirte a nuestro equipo — nos encantaría saber de ti.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Nombre Completo', phoneLabel: 'Teléfono', emailLabel: 'Correo', position: 'Puesto Deseado', city: 'Ciudad', message: 'Mensaje',
-      namePh: 'Tu nombre completo', phonePh: '+40 ...', emailPh: 'tu@email.es', positionPh: '¿Qué puesto te interesa?', cityPh: 'Tu ciudad', messagePh: 'Cuéntanos sobre ti, tu experiencia y por qué quieres trabajar con nosotros...', submit: 'Enviar Candidatura',
+      name: 'Nombre Completo', phoneLabel: 'Teléfono', emailLabel: 'Correo',
+      subject: 'Asunto', subjectOptions: ['Consulta General', 'Cotización de Transporte', 'Alianza Comercial', 'Oportunidad de Carrera'],
+      company: 'Empresa', message: 'Mensaje',
+      namePh: 'Tu nombre completo', phonePh: '+40 ...', emailPh: 'tu@email.es',
+      subjectPh: 'Selecciona un asunto', companyPh: 'Nombre de la empresa (opcional)',
+      messagePh: '¿Cómo podemos ayudarte? Cuéntanos sobre tus necesidades, preguntas o cómo te gustaría colaborar...', submit: 'Enviar Mensaje',
+      successTitle: '¡Mensaje Enviado!', successText: 'Gracias por contactarnos. Te responderemos lo antes posible.', sendAnother: 'Enviar Otro Mensaje',
     },
   },
   footer: {

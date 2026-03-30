@@ -85,13 +85,26 @@
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 0.7rem 0.9rem;
-  transition: border-color var(--tr);
+  transition: border-color var(--tr), box-shadow var(--tr);
   outline: none;
 }
-.fg input:focus,
-.fg textarea:focus {
-  border-color: var(--amber);
+.fg select {
+  font-family: var(--ff-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.7rem 0.9rem;
+  transition: border-color var(--tr), box-shadow var(--tr);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
 }
+.fg select option[value=""][disabled] { color: var(--muted); }
 .fg textarea {
   resize: none;
   overflow-y: auto;
@@ -101,4 +114,71 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+/* ─── SUBMIT BUTTON — icon + loading state ───────────────────── */
+.btn--submit {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin-top: 0.5rem;
+  transition: all var(--tr);
+}
+.btn--submit:disabled {
+  opacity: 0.5; cursor: not-allowed;
+  transform: none !important; box-shadow: none !important;
+}
+.btn__icon {
+  width: 1rem; height: 1rem;
+  flex-shrink: 0;
+}
+.btn--loading { pointer-events: none; }
+.btn__spinner {
+  width: 1.2rem; height: 1.2rem;
+  border: 2px solid rgba(11,15,26,0.2);
+  border-top-color: #0b0f1a;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── SUCCESS STATE ──────────────────────────────────────────── */
+.contact__form--success {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 380px;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.form-success {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 1rem;
+  max-width: 320px;
+}
+.form-success__icon {
+  width: 3.5rem; height: 3.5rem;
+  color: var(--amber);
+  animation: successPop 0.5s ease;
+}
+@keyframes successPop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.form-success__title {
+  font-family: var(--ff-disp);
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+.form-success__text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ─── FOCUS + FILLED VISUAL FEEDBACK ─────────────────────────── */
+.fg input:focus,
+.fg textarea:focus,
+.fg select:focus {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(232,160,32,0.08);
 }

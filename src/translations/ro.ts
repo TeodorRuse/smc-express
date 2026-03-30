@@ -79,11 +79,16 @@ export const ro: Translations = {
   },
   contact: {
     tag: 'Contactează-ne', title: 'Hai Să Lucrăm\nÎmpreună',
-    body: 'Căutăm mereu oameni dedicați care să ni se alăture echipei. Fie că ești un șofer experimentat sau cauți o nouă oportunitate în logistică, ne-ar plăcea să auzim de la tine.',
+    body: 'Fie că aveți nevoie de o ofertă de transport, doriți să explorați un parteneriat sau căutați să vă alăturați echipei noastre — ne-ar plăcea să auzim de la dumneavoastră.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Nume Complet', phoneLabel: 'Telefon', emailLabel: 'Email', position: 'Poziția Dorită', city: 'Orașul', message: 'Mesaj',
-      namePh: 'Numele dumneavoastră complet', phonePh: '+40 ...', emailPh: 'email@exemplu.com', positionPh: 'Ce poziție vă interesează?', cityPh: 'Orașul dumneavoastră', messagePh: 'Spuneți-ne despre dumneavoastră, experiența și de ce doriți să lucrați cu noi...', submit: 'Trimite Aplicația',
+      name: 'Nume Complet', phoneLabel: 'Telefon', emailLabel: 'Email',
+      subject: 'Subiect', subjectOptions: ['Întrebare Generală', 'Cerere de Ofertă Transport', 'Parteneriat de Afaceri', 'Oportunitate de Carieră'],
+      company: 'Companie', message: 'Mesaj',
+      namePh: 'Numele dumneavoastră complet', phonePh: '+40 ...', emailPh: 'email@exemplu.com',
+      subjectPh: 'Selectați un subiect', companyPh: 'Numele companiei (opțional)',
+      messagePh: 'Cum vă putem ajuta? Spuneți-ne despre nevoile, întrebările sau modul în care doriți să colaborăm...', submit: 'Trimite Mesajul',
+      successTitle: 'Mesaj Trimis!', successText: 'Vă mulțumim că ne-ați contactat. Vă vom răspunde cât mai curând posibil.', sendAnother: 'Trimite Alt Mesaj',
     },
   },
   footer: {

@@ -79,11 +79,16 @@ export const en: Translations = {
   },
   contact: {
     tag: 'Get In Touch', title: 'Let\'s Work\nTogether',
-    body: 'We\'re always looking for dedicated people to join our team. Whether you\'re an experienced driver or looking for a new opportunity in logistics, we\'d love to hear from you.',
+    body: 'Whether you need a transport quote, want to explore a partnership, or are looking to join our team — we\'d love to hear from you.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Full Name', phoneLabel: 'Phone', emailLabel: 'Email', position: 'Position', city: 'City', message: 'Message',
-      namePh: 'Your full name', phonePh: '+40 ...', emailPh: 'your@email.com', positionPh: 'What position are you interested in?', cityPh: 'Your city', messagePh: 'Tell us about yourself, your experience, and why you want to work with us...', submit: 'Send Application',
+      name: 'Full Name', phoneLabel: 'Phone', emailLabel: 'Email',
+      subject: 'Subject', subjectOptions: ['General Inquiry', 'Transport Quote', 'Business Partnership', 'Career Opportunity'],
+      company: 'Company', message: 'Message',
+      namePh: 'Your full name', phonePh: '+40 ...', emailPh: 'your@email.com',
+      subjectPh: 'Select a subject', companyPh: 'Company name (optional)',
+      messagePh: 'How can we help you? Tell us about your needs, questions, or how you\'d like to work with us...', submit: 'Send Message',
+      successTitle: 'Message Sent!', successText: 'Thank you for reaching out. We\'ll get back to you as soon as possible.', sendAnother: 'Send Another Message',
     },
   },
   footer: {

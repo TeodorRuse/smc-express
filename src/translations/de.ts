@@ -71,11 +71,16 @@ export const de: Translations = {
   },
   contact: {
     tag: 'Kontakt', title: 'Gemeinsam\nArbeiten',
-    body: 'Wir suchen immer engagierte Menschen für unser Team. Ob erfahrener Fahrer oder auf der Suche nach einer neuen Chance in der Logistik — wir freuen uns von Ihnen zu hören.',
+    body: 'Ob Sie ein Transportangebot benötigen, eine Partnerschaft erkunden oder unserem Team beitreten möchten — wir freuen uns von Ihnen zu hören.',
     phone: '__PHONE__', email: '__EMAIL__', address: '__ADDRESS__',
     form: {
-      name: 'Vollständiger Name', phoneLabel: 'Telefon', emailLabel: 'E-Mail', position: 'Gewünschte Position', city: 'Stadt', message: 'Nachricht',
-      namePh: 'Ihr vollständiger Name', phonePh: '+40 ...', emailPh: 'ihre@email.de', positionPh: 'Welche Position interessiert Sie?', cityPh: 'Ihre Stadt', messagePh: 'Erzählen Sie uns über sich, Ihre Erfahrung und warum Sie mit uns arbeiten möchten...', submit: 'Bewerbung Senden',
+      name: 'Vollständiger Name', phoneLabel: 'Telefon', emailLabel: 'E-Mail',
+      subject: 'Betreff', subjectOptions: ['Allgemeine Anfrage', 'Transportangebot', 'Geschäftspartnerschaft', 'Karrieremöglichkeit'],
+      company: 'Unternehmen', message: 'Nachricht',
+      namePh: 'Ihr vollständiger Name', phonePh: '+40 ...', emailPh: 'ihre@email.de',
+      subjectPh: 'Betreff auswählen', companyPh: 'Firmenname (optional)',
+      messagePh: 'Wie können wir Ihnen helfen? Erzählen Sie uns von Ihren Bedürfnissen, Fragen oder wie Sie mit uns zusammenarbeiten möchten...', submit: 'Nachricht Senden',
+      successTitle: 'Nachricht Gesendet!', successText: 'Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.', sendAnother: 'Weitere Nachricht Senden',
     },
   },
   footer: {

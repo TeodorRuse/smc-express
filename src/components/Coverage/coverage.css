@@ -1,70 +1,47 @@
-/* ─── COVERAGE BAND — full-width cinematic strip ─────────────── */
-.coverage-band {
-  position: relative;
-  width: 100%;
-  height: clamp(420px, 50vh, 560px);
-  overflow: hidden;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+/* ─── COVERAGE — contained section, text + map side by side ──── */
+.coverage__inner {
+  display: grid;
+  grid-template-columns: 0.55fr 1fr;
+  gap: 2rem;
+  align-items: center;
 }
 
-/* ─── MAP — fills band, nudged right so Europe sits on the right half ── */
-.coverage-band__map {
-  position: absolute;
-  top: -130%;
-  right: -10%;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.8s ease 0.15s;
-}
-.coverage-band__map--visible { opacity: 1; }
-
-/* ─── GRADIENT FADE — tighter, text blends into map ────────── */
-.coverage-band__fade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    var(--bg) 8%,
-    color-mix(in srgb, var(--bg) 70%, transparent) 18%,
-    color-mix(in srgb, var(--bg) 10%, transparent) 34%,
-    transparent 46%
-  );
-  pointer-events: none;
-  z-index: 1;
+/* ─── TEXT ──────────────────────────────────────────────────── */
+.coverage__text {
+  padding: 1rem 0;
 }
 
-/* ─── TEXT — closer to the map, comfortable to read ──────────── */
-.coverage-band__content {
-  position: relative;
-  z-index: 2;
-  max-width: 440px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 0 2rem clamp(2rem, 8vw, 6rem);
+.coverage__text .sh__title {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  line-height: 1.18;
+  margin-bottom: clamp(0.6rem, 1.2vw, 1rem);
 }
 
-.coverage-band__content .sh__title {
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-  line-height: 1.15;
-  margin-bottom: 1rem;
+.coverage__text .body-text {
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  line-height: 1.75;
 }
 
-.coverage-band__content .body-text {
-  font-size: 1rem;
-  line-height: 1.8;
-  max-width: 400px;
+.coverage__text .tag {
+  font-size: clamp(0.6rem, 0.8vw, 0.78rem);
 }
 
-.regions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.25rem; }
+.regions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: clamp(0.8rem, 1.2vw, 1.25rem); }
 .region-tag {
-  font-family: var(--ff-cond); font-size: 0.75rem; font-weight: 500;
+  font-family: var(--ff-cond); font-size: clamp(0.65rem, 0.85vw, 0.75rem); font-weight: 500;
   letter-spacing: 0.06em; padding: 0.35rem 0.7rem;
   border: 1px solid var(--border); border-radius: 2px; color: var(--muted);
-  background: color-mix(in srgb, var(--bg) 50%, transparent);
-  backdrop-filter: blur(4px);
+}
+
+/* ─── MAP ──────────────────────────────────────────────────── */
+.coverage__map {
+  /* let the SVG breathe, no box */
+}
+
+.coverage__svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* ─── DOT FIELD ────────────────────────────────────────────── */
@@ -147,33 +124,112 @@
 }
 
 /* ─── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .coverage__inner { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
 @media (max-width: 768px) {
-  .coverage-band { height: auto; min-height: 480px; }
-  .coverage-band__map {
+  .coverage {
+    padding: 0; margin: 0 1rem;
+    border-radius: 16px;
+    overflow: hidden;
     position: relative;
-    right: auto;
-    width: 100%;
-    height: 260px;
+    border: 1px solid var(--border);
   }
-  .coverage-band__fade {
+  .coverage::after { display: none; }
+
+  .coverage__inner {
+    display: block;
+    position: relative;
+    min-height: 60vh;
+  }
+
+  /* Map — absolute, fills the whole card, centered on Europe */
+  .coverage__map {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: var(--bg);
+  }
+  .coverage__map::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 60% 50% at 50% 40%,
+      rgba(232,160,32,0.06) 0%,
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+  .coverage__svg {
+    position: absolute;
+    width: 180%;
+    height: 180%;
+    top: -40%;
+    left: -50%;
+    opacity: 0.75;
+  }
+
+  /* Text — positioned at bottom over the map */
+  .coverage__text {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    z-index: 2;
+    padding: 8rem 1.5rem 1.8rem;
     background: linear-gradient(
-      to bottom,
+      to top,
       var(--bg) 0%,
-      transparent 40%
+      color-mix(in srgb, var(--bg) 92%, transparent) 30%,
+      color-mix(in srgb, var(--bg) 60%, transparent) 55%,
+      color-mix(in srgb, var(--bg) 20%, transparent) 80%,
+      transparent 100%
     );
   }
-  .coverage-band__content {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: auto;
-    max-width: none;
-    padding: 2rem clamp(1.5rem, 5vw, 3rem);
+  .coverage__text .tag { font-size: 0.7rem; }
+  .coverage__text .sh__title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+    line-height: 1.05;
+    margin-bottom: 0.7rem;
   }
+  .coverage__text .body-text {
+    font-size: 0.88rem; line-height: 1.65;
+  }
+
+  /* Region tags — frosted pills */
+  .regions { gap: 0.45rem; margin-top: 1rem; }
+  .region-tag {
+    border-radius: 20px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+    background: color-mix(in srgb, var(--bg) 50%, transparent);
+    backdrop-filter: blur(10px);
+    border-color: color-mix(in srgb, var(--border) 50%, transparent);
+  }
+
+  /* Make Alba Iulia really pop */
+  .alba-label { font-size: 10px; }
+  .city-label { font-size: 5px; }
 }
 
 @media (max-width: 480px) {
-  .coverage-band { min-height: 440px; }
-  .coverage-band__content { padding: 1.5rem 1.25rem; }
-  .coverage-band__content .body-text { max-width: none; }
-  .region-tag { font-size: 0.72rem; padding: 0.3rem 0.6rem; }
+  .coverage { margin: 0 0.75rem; border-radius: 12px; }
+  .coverage__inner { min-height: 55vh; }
+  .coverage__svg {
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -60%;
+  }
+  .coverage__text { padding: 6rem 1.25rem 1.5rem; }
+  .coverage__text .sh__title { font-size: clamp(1.7rem, 8vw, 2.4rem); }
+  .coverage__text .body-text { font-size: 0.84rem; }
+  .region-tag { font-size: 0.65rem; padding: 0.3rem 0.7rem; }
+}
+
+@media (max-width: 360px) {
+  .coverage__inner { min-height: 50vh; }
+  .coverage__text .sh__title { font-size: 1.6rem; }
+  .coverage__text .body-text { font-size: 0.8rem; }
+  .region-tag { font-size: 0.6rem; }
 }

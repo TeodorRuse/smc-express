@@ -79,6 +79,33 @@ textarea { resize: vertical; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 .section   { padding: 6rem 0; background: var(--bg); }
 
+/* ─── SECTION DIVIDER — motto band between sections ──────────── */
+.section-divider {
+  padding: 1rem 0;
+  margin: -3rem 0;
+  background: var(--bg);
+}
+.section-divider__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.section-divider__line {
+  flex: 1;
+  height: 1px;
+  background: var(--amber);
+  opacity: 0.25;
+}
+.section-divider__text {
+  font-family: var(--ff-disp);
+  font-size: clamp(0.9rem, 1.6vw, 1.3rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--amber);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
 /* ─── BUTTONS ────────────────────────────────────────────────── */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;

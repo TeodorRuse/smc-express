@@ -104,16 +104,20 @@ export interface Translations {
       name: string;
       phoneLabel: string;
       emailLabel: string;
-      position: string;
-      city: string;
+      subject: string;
+      subjectOptions: string[];
+      company: string;
       message: string;
       namePh: string;
       phonePh: string;
       emailPh: string;
-      positionPh: string;
-      cityPh: string;
+      subjectPh: string;
+      companyPh: string;
       messagePh: string;
       submit: string;
+      successTitle: string;
+      successText: string;
+      sendAnother: string;
     };
   };
   footer: {
